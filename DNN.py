@@ -8,10 +8,15 @@ import random
 from sklearn.utils import shuffle
 import numpy as np
 
-# leave to -1 to read all the data in the folder
-NS_to_open=100
+#this is the path to where the data is stored
+path = 'D:\\Program Files\\OneDrive - TU Eindhoven\\PhD project\\Machine Learning\\DNN1 sample\\'
 
-# The input data consists of the following informations
+
+# leave to -1 to read all the data in the folder
+NS_to_open=500
+
+# The input data consists of the following information: we have 100 values of S(k) for different k
+# logt, at which we want the intermediate scattering function, and the volume fraction eta.
 input_labels=[]
 for si in range(100):
     input_labels.append('S%d'%si)
@@ -21,7 +26,6 @@ input_labels.append('log t')
 
 full_in = []
 full_out = []
-path = 'C:\\Users\\Ilian\\Desktop\\Data\\'
 
 print('\n*******************\n\t Creating input database: ')
 listSfiles = shuffle(glob.glob(path + 'Data\\Sk_data\\Sk_eta*'))
@@ -108,6 +112,7 @@ print('R2 score over the test set: %f'%model.score(X_test_scaled, y_test_scaled)
 
 
 import matplotlib.pyplot as plt
+# visualize the prediction with example curves
 SK05 = np.loadtxt(path+'Data\\Sk_data\\Sk_eta_0.5017710322.txt')
 Ft05 = np.loadtxt(path+'Data\\phi_data\\phi_eta_0.5017710322.txt')
 SK055 = np.loadtxt(path+'Data\\Sk_data\\Sk_eta_0.5486267326.txt')
@@ -142,51 +147,10 @@ plt.xlabel("log10(t)")
 plt.ylabel("phi(k,t) at kD=7.4")
 plt.show()
 
-
+# plot the error as function of the volume fraction
 error = (model.predict(X_test_scaled) - np.ravel(y_test_scaled))**2
 ax = plt.scatter(min_max_scalerX.inverse_transform(X_test_scaled)[:, -2], error, s=1)
 plt.xlabel("volume fraction")
 plt.ylabel("error")
 plt.show()
 
-
-
-# # Here I do bayesian (or grid search) to determine the best parameters for the model
-# # (unfortunately bayesian search does not work for now)
-
-# list_of_architectures = [(50, 50, 50), (50, 100, 50), (100,),
-#                             (100, 100), (100, 100, 100), (50,)]
-
-
-# ##from skopt import BayesSearchCV
-# ### The parameter space is a dictionary  
-# ##parameter_space = dict()
-# ##parameter_space['alpha'] = (1e-6, 1e-2, 'log-uniform')
-# ##parameter_space['hidden_layer_sizes'] = [(10,10),(100)] 
-# ##parameter_space['n_iter_no_change'] = (10,500, 'log-uniform')
-# ##parameter_space['solver'] = ['sgd','adam']
-# ##parameter_space['tol'] = (1e-5,1e-3, 'log-uniform')
-# ##from sklearn.model_selection import RepeatedStratifiedKFold
-# ##cv = RepeatedStratifiedKFold(n_splits=10, n_repeats=3, random_state=1)
-# ##search = BayesSearchCV(model, parameter_space, n_jobs=-1, cv=cv)
-
-# # This is gridSearch, if Bayes is not ok
-# from sklearn.model_selection import GridSearchCV
-# parameter_space = {
-#     'alpha': [0.0001, 0.001, 0.05],
-#     'hidden_layer_sizes':  list_of_architectures,
-#     'n_iter_no_change': [10, 100, 1000],
-#     'solver': ['sgd', 'adam', 'lbfgs'],
-#     'tol': [10],
-#     #'tol': [10**-3,10 ** -4, 10 ** -5],
-# }
-# search = GridSearchCV(model, parameter_space, n_jobs=-1, cv=3)
-
-# search.fit(X_train_scaled,y_train_scaled)
-
-# # Best parameter set
-# print('Best parameters found:\n', search.best_params_)
-
-
-# print('R2 score over the training set: %f'%search.score(X_train_scaled, y_train_scaled))
-# print('R2 score over the validation set: %f'%search.score(X_test_scaled, y_test_scaled))
