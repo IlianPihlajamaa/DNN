@@ -1,0 +1,136 @@
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.001
+max_step = 10000
+n_in = 102
+n_out = 1
+net_depth = 5
+net_width = (100, 100, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd5_nw-100-100-20_bias/out
+out_infix = 
+print_step = 100
+save_step = 100
+seed = 27702032
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=102, out_features=100, bias=True)
+    (1): Linear(in_features=100, out_features=100, bias=True)
+    (2): ReLU()
+    (3): Linear(in_features=100, out_features=20, bias=True)
+    (4): ReLU()
+    (5): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 22441
+init_time = 0.000
+Training...
+step = 0, loss = 0.4140663, r2_train = -1.4084851, r2_test = -1.3904169, train_time = 0.249, used_time = 0.249
+step = 100, loss = 0.040469704, r2_train = 0.74943226, r2_test = 0.7518344, train_time = 0.267, used_time = 27.102
+step = 200, loss = 0.011773802, r2_train = 0.92310532, r2_test = 0.92203719, train_time = 0.249, used_time = 52.112
+step = 300, loss = 0.0098401095, r2_train = 0.93582617, r2_test = 0.93497971, train_time = 0.255, used_time = 77.784
+step = 400, loss = 0.0088865646, r2_train = 0.94101351, r2_test = 0.93973439, train_time = 0.247, used_time = 102.677
+step = 500, loss = 0.0070447344, r2_train = 0.95809858, r2_test = 0.95768881, train_time = 0.249, used_time = 127.739
+step = 600, loss = 0.0034792439, r2_train = 0.9772907, r2_test = 0.97676082, train_time = 0.251, used_time = 153.030
+step = 700, loss = 0.0018966147, r2_train = 0.9876549, r2_test = 0.98741443, train_time = 0.251, used_time = 178.287
+step = 800, loss = 0.0021128499, r2_train = 0.98839151, r2_test = 0.98830978, train_time = 0.251, used_time = 203.568
+step = 900, loss = 0.00069994995, r2_train = 0.99535925, r2_test = 0.99527729, train_time = 0.250, used_time = 228.736
+step = 1000, loss = 0.00049733114, r2_train = 0.99672739, r2_test = 0.99666404, train_time = 0.250, used_time = 253.914
+step = 1100, loss = 0.0004666813, r2_train = 0.99745577, r2_test = 0.99740444, train_time = 0.254, used_time = 279.431
+step = 1200, loss = 0.00047235337, r2_train = 0.9974219, r2_test = 0.99739698, train_time = 0.268, used_time = 306.363
+step = 1300, loss = 0.00031328141, r2_train = 0.99785777, r2_test = 0.99783643, train_time = 0.243, used_time = 330.823
+step = 1400, loss = 0.00027246769, r2_train = 0.99813532, r2_test = 0.99813588, train_time = 0.243, used_time = 355.312
+step = 1500, loss = 0.00026369752, r2_train = 0.99829111, r2_test = 0.99827575, train_time = 0.242, used_time = 379.626
+step = 1600, loss = 0.0002908796, r2_train = 0.99800735, r2_test = 0.99801366, train_time = 0.251, used_time = 404.907
+step = 1700, loss = 0.00017357105, r2_train = 0.99885299, r2_test = 0.99884706, train_time = 0.251, used_time = 430.151
+step = 1800, loss = 0.00038269688, r2_train = 0.9977071, r2_test = 0.99769288, train_time = 0.242, used_time = 454.513
+step = 1900, loss = 0.00031287668, r2_train = 0.99852143, r2_test = 0.99851923, train_time = 0.244, used_time = 479.016
+step = 2000, loss = 0.00048285823, r2_train = 0.99638146, r2_test = 0.99642503, train_time = 0.241, used_time = 503.259
+step = 2100, loss = 0.00027576902, r2_train = 0.9982246, r2_test = 0.99825788, train_time = 0.249, used_time = 528.343
+step = 2200, loss = 0.00029270421, r2_train = 0.99817468, r2_test = 0.99820724, train_time = 0.293, used_time = 557.874
+step = 2300, loss = 0.00023540906, r2_train = 0.99865782, r2_test = 0.99868739, train_time = 0.274, used_time = 585.447
+step = 2400, loss = 0.00019695694, r2_train = 0.99847034, r2_test = 0.998504, train_time = 0.246, used_time = 610.156
+step = 2500, loss = 0.00014269817, r2_train = 0.99905444, r2_test = 0.99904226, train_time = 0.247, used_time = 635.016
+step = 2600, loss = 0.00033500343, r2_train = 0.99739153, r2_test = 0.99736384, train_time = 0.242, used_time = 659.316
+step = 2700, loss = 8.8624326e-05, r2_train = 0.99939745, r2_test = 0.99940956, train_time = 0.251, used_time = 684.545
+step = 2800, loss = 0.00047847665, r2_train = 0.9969324, r2_test = 0.99690645, train_time = 0.241, used_time = 708.789
+step = 2900, loss = 9.788431e-05, r2_train = 0.99939779, r2_test = 0.99941286, train_time = 0.242, used_time = 733.179
+step = 3000, loss = 0.00014897139, r2_train = 0.99916802, r2_test = 0.99919234, train_time = 0.240, used_time = 757.291
+step = 3100, loss = 0.00015040181, r2_train = 0.99905994, r2_test = 0.99904972, train_time = 0.239, used_time = 781.357
+step = 3200, loss = 6.4950957e-05, r2_train = 0.99957536, r2_test = 0.99958077, train_time = 0.241, used_time = 805.636
+step = 3300, loss = 0.00025460894, r2_train = 0.99854553, r2_test = 0.99853105, train_time = 0.238, used_time = 829.562
+step = 3400, loss = 0.00030852365, r2_train = 0.9975051, r2_test = 0.99753553, train_time = 0.246, used_time = 854.315
+step = 3500, loss = 0.00017408552, r2_train = 0.9987363, r2_test = 0.99872172, train_time = 0.245, used_time = 878.946
+step = 3600, loss = 0.00017425453, r2_train = 0.99847563, r2_test = 0.99845706, train_time = 0.244, used_time = 903.467
+step = 3700, loss = 0.00034379539, r2_train = 0.99782001, r2_test = 0.99779803, train_time = 0.247, used_time = 928.362
+step = 3800, loss = 0.0001611429, r2_train = 0.99906795, r2_test = 0.99905415, train_time = 0.243, used_time = 952.822
+step = 3900, loss = 0.00011616639, r2_train = 0.99913471, r2_test = 0.99915918, train_time = 0.236, used_time = 976.567
+step = 4000, loss = 0.00012823276, r2_train = 0.99894346, r2_test = 0.99892844, train_time = 0.241, used_time = 1000.787
+step = 4100, loss = 0.00026901969, r2_train = 0.99787488, r2_test = 0.99785585, train_time = 0.242, used_time = 1025.151
+step = 4200, loss = 4.8804272e-05, r2_train = 0.99968939, r2_test = 0.99969627, train_time = 0.245, used_time = 1049.761
+step = 4300, loss = 0.00025411369, r2_train = 0.99852182, r2_test = 0.99851049, train_time = 0.251, used_time = 1075.047
+step = 4400, loss = 0.00016776789, r2_train = 0.99878556, r2_test = 0.99880728, train_time = 0.246, used_time = 1099.835
+step = 4500, loss = 0.00039253181, r2_train = 0.99674379, r2_test = 0.99672362, train_time = 0.241, used_time = 1124.099
+step = 4600, loss = 4.0998305e-05, r2_train = 0.99972313, r2_test = 0.99972717, train_time = 0.243, used_time = 1148.539
+step = 4700, loss = 9.9980917e-05, r2_train = 0.9996152, r2_test = 0.99962137, train_time = 0.251, used_time = 1173.768
+step = 4800, loss = 4.1864213e-05, r2_train = 0.99972019, r2_test = 0.99972763, train_time = 0.242, used_time = 1198.156
+step = 4900, loss = 0.00010260265, r2_train = 0.99924083, r2_test = 0.99923381, train_time = 0.244, used_time = 1222.739
+step = 5000, loss = 0.00021934084, r2_train = 0.99850571, r2_test = 0.99849293, train_time = 0.228, used_time = 1245.667
+step = 5100, loss = 0.00015651305, r2_train = 0.99926908, r2_test = 0.99928667, train_time = 0.239, used_time = 1269.739
+step = 5200, loss = 0.00011129997, r2_train = 0.99921229, r2_test = 0.99920203, train_time = 0.244, used_time = 1294.329
+step = 5300, loss = 4.8499581e-05, r2_train = 0.99962548, r2_test = 0.99963689, train_time = 0.265, used_time = 1320.939
+step = 5400, loss = 6.3711088e-05, r2_train = 0.99952757, r2_test = 0.99952125, train_time = 0.280, used_time = 1349.091
+step = 5500, loss = 0.00020340098, r2_train = 0.99850396, r2_test = 0.99851698, train_time = 0.247, used_time = 1373.908
+step = 5600, loss = 0.00013826844, r2_train = 0.99906307, r2_test = 0.99905516, train_time = 0.244, used_time = 1398.459
+step = 5700, loss = 7.4904831e-05, r2_train = 0.99950274, r2_test = 0.9995141, train_time = 0.244, used_time = 1423.039
+step = 5800, loss = 5.3804602e-05, r2_train = 0.99961491, r2_test = 0.9996255, train_time = 0.246, used_time = 1447.776
+step = 5900, loss = 5.4148406e-05, r2_train = 0.99950096, r2_test = 0.99951218, train_time = 0.240, used_time = 1471.922
+step = 6000, loss = 2.7643882e-05, r2_train = 0.99982064, r2_test = 0.99982316, train_time = 0.238, used_time = 1495.914
+step = 6100, loss = 2.8185842e-05, r2_train = 0.9998149, r2_test = 0.99981599, train_time = 0.242, used_time = 1520.231
+step = 6200, loss = 7.6034406e-05, r2_train = 0.99933031, r2_test = 0.99932281, train_time = 0.254, used_time = 1545.754
+step = 6300, loss = 8.3819912e-05, r2_train = 0.99935398, r2_test = 0.99936686, train_time = 0.251, used_time = 1571.034
+step = 6400, loss = 5.1633953e-05, r2_train = 0.9996833, r2_test = 0.99968509, train_time = 0.257, used_time = 1596.875
+step = 6500, loss = 5.4344108e-05, r2_train = 0.99961937, r2_test = 0.99961444, train_time = 0.237, used_time = 1620.697
+step = 6600, loss = 8.117381e-05, r2_train = 0.99953943, r2_test = 0.99953529, train_time = 0.238, used_time = 1644.687
+step = 6700, loss = 3.4604137e-05, r2_train = 0.99976313, r2_test = 0.99977216, train_time = 0.237, used_time = 1668.553
+step = 6800, loss = 7.4786059e-05, r2_train = 0.99959741, r2_test = 0.99959379, train_time = 0.241, used_time = 1692.772
+step = 6900, loss = 5.9102e-05, r2_train = 0.99955044, r2_test = 0.99954708, train_time = 0.236, used_time = 1716.548
+step = 7000, loss = 3.2509372e-05, r2_train = 0.99977416, r2_test = 0.99977245, train_time = 0.236, used_time = 1740.310
+step = 7100, loss = 4.7977959e-05, r2_train = 0.99958954, r2_test = 0.99958672, train_time = 0.237, used_time = 1764.128
+step = 7200, loss = 4.0774219e-05, r2_train = 0.99975856, r2_test = 0.99975643, train_time = 0.236, used_time = 1787.871
+step = 7300, loss = 0.00029257548, r2_train = 0.9976965, r2_test = 0.9977114, train_time = 0.237, used_time = 1811.729
+step = 7400, loss = 5.5211028e-05, r2_train = 0.99961825, r2_test = 0.99962915, train_time = 0.241, used_time = 1836.010
+step = 7500, loss = 0.00013675167, r2_train = 0.99861879, r2_test = 0.99863366, train_time = 0.266, used_time = 1862.813
+step = 7600, loss = 0.00016825295, r2_train = 0.99942675, r2_test = 0.99942361, train_time = 0.270, used_time = 1890.005
+step = 7700, loss = 5.815725e-05, r2_train = 0.9996539, r2_test = 0.99965027, train_time = 0.267, used_time = 1916.876
+step = 7800, loss = 0.00013786011, r2_train = 0.99935533, r2_test = 0.99936834, train_time = 0.268, used_time = 1943.851
+step = 7900, loss = 2.4035117e-05, r2_train = 0.9998442, r2_test = 0.99984844, train_time = 0.264, used_time = 1970.412
+step = 8000, loss = 2.0091708e-05, r2_train = 0.99987021, r2_test = 0.99987596, train_time = 0.261, used_time = 1996.628
+step = 8100, loss = 2.2747833e-05, r2_train = 0.99984935, r2_test = 0.99985046, train_time = 0.255, used_time = 2022.277
+step = 8200, loss = 5.3694735e-05, r2_train = 0.9994366, r2_test = 0.99944773, train_time = 0.254, used_time = 2047.797
+step = 8300, loss = 5.9622289e-05, r2_train = 0.99955707, r2_test = 0.99955221, train_time = 0.258, used_time = 2073.724
+step = 8400, loss = 9.6045844e-05, r2_train = 0.99940122, r2_test = 0.99941162, train_time = 0.252, used_time = 2099.029
+step = 8500, loss = 2.5764101e-05, r2_train = 0.99981588, r2_test = 0.99981628, train_time = 0.252, used_time = 2124.442
+step = 8600, loss = 0.00025234806, r2_train = 0.99912903, r2_test = 0.99912864, train_time = 0.253, used_time = 2149.934
+step = 8700, loss = 3.8286732e-05, r2_train = 0.99968666, r2_test = 0.99968366, train_time = 0.256, used_time = 2175.683
+step = 8800, loss = 0.00030591663, r2_train = 0.99816508, r2_test = 0.99817643, train_time = 0.250, used_time = 2200.846
+step = 8900, loss = 3.5919405e-05, r2_train = 0.99974179, r2_test = 0.99973988, train_time = 0.254, used_time = 2226.367
+step = 9000, loss = 1.755661e-05, r2_train = 0.99988193, r2_test = 0.99988428, train_time = 0.257, used_time = 2252.201
+step = 9100, loss = 7.9377959e-05, r2_train = 0.99931752, r2_test = 0.99932631, train_time = 0.254, used_time = 2277.764
+step = 9200, loss = 2.3618629e-05, r2_train = 0.9997275, r2_test = 0.99972561, train_time = 0.257, used_time = 2303.641
+step = 9300, loss = 1.8375951e-05, r2_train = 0.99987663, r2_test = 0.99987901, train_time = 0.255, used_time = 2329.320
+step = 9400, loss = 4.8838336e-05, r2_train = 0.99950499, r2_test = 0.99949981, train_time = 0.257, used_time = 2355.223
+step = 9500, loss = 0.00010254438, r2_train = 0.99935358, r2_test = 0.99936375, train_time = 0.256, used_time = 2380.988
+step = 9600, loss = 1.6908879e-05, r2_train = 0.99986842, r2_test = 0.99987445, train_time = 0.255, used_time = 2406.638
+step = 9700, loss = 1.8684016e-05, r2_train = 0.99988081, r2_test = 0.99988612, train_time = 0.256, used_time = 2432.385
+step = 9800, loss = 4.5694228e-05, r2_train = 0.99961935, r2_test = 0.99961807, train_time = 0.254, used_time = 2457.979
+step = 9900, loss = 6.0653827e-05, r2_train = 0.99973499, r2_test = 0.99973889, train_time = 0.261, used_time = 2484.280
+step = 10000, loss = 2.3991451e-05, r2_train = 0.99982489, r2_test = 0.99982398, train_time = 0.252, used_time = 2509.680

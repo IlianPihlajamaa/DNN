@@ -125,7 +125,7 @@ else:
     clear_log()
 print_args()
 args.device = torch.device('cpu' if args.cuda < 0 else 'cuda:0')
-init_out_filename()
+init_out_dir()
 
 
 net = MLP(**vars(args))
@@ -153,7 +153,7 @@ elif args.optimizer == 'sgdm':
 elif args.optimizer == 'rmsprop':
     optimizer = torch.optim.RMSprop(params, lr=args.lr, alpha=0.99)
 elif args.optimizer == 'adam':
-    optimizer = torch.optim.Adam(params, lr=args.lr, betas=(0.9, 0.999))
+    optimizer = torch.optim.Adam(params, lr=args.lr, betas=(0.9, 0.999), weight_decay=0.0001)
 elif args.optimizer == 'adam0.5':
     optimizer = torch.optim.Adam(params, lr=args.lr, betas=(0.5, 0.999))
 else:

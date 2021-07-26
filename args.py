@@ -6,7 +6,7 @@ group = parser.add_argument_group('network parameters')
 group.add_argument('--n_in', type=int, default=102, help='number of inputs')
 group.add_argument('--n_out', type=int, default=1, help='number of outputs')
 group.add_argument('--net_depth', type=int, default=5, help='number of total layers')
-group.add_argument('--net_width','--list', nargs='+', default=(100, 100, 10), help='size of the hidden layers')
+group.add_argument('--net_width','--list', nargs='+', default=(100, 100, 20), help='size of the hidden layers')
 group.add_argument('--bias', action='store_true', default=True, help='use bias?')
 group.add_argument(
     '--dtype',
