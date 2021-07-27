@@ -30,7 +30,7 @@ group.add_argument(
     help='optimizer')
 group.add_argument('--lr', type=float, default=1e-3, help='learning rate')
 group.add_argument(
-    '--max_step', type=int, default=10**4, help='maximum number of steps')
+    '--max_step', type=int, default=10**3, help='maximum number of steps')
 group.add_argument(
     '--clip_grad',
     type=float,
@@ -47,7 +47,7 @@ group.add_argument(
 group.add_argument(
     '--print_step',
     type=int,
-    default=100,
+    default=5,
     help='number of steps to print log, 0 for disabled')
 group.add_argument(
     '--save_step',

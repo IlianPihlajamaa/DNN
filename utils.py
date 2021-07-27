@@ -55,8 +55,8 @@ def get_args_features():
 
 
 def init_out_filename():
-    if not args.out_dir:
-        return
+    # if not args.out_dir:
+    #     return
     features = get_args_features()
     template = '{args.out_dir}/{features}/out{args.out_infix}'
     args.out_filename = template.format(**{**globals(), **locals()})

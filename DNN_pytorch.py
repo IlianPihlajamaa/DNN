@@ -16,6 +16,7 @@ import torch.nn as nn
 import numpy as np
 from MLP import MLP
 from args import args
+import torch.utils.data as utils_data
 from utils import (
     r2_loss,
     default_dtype_torch,
@@ -145,6 +146,9 @@ nparams = int(sum([np.prod(p.shape) for p in params]))
 my_log('Total number of trainable parameters: {}'.format(nparams))
 named_params = list(net.named_parameters())
 
+training_samples = utils_data.TensorDataset(X_train_scaled, y_train_scaled)
+data_loader_trn = utils_data.DataLoader(training_samples, batch_size=200, drop_last=False, shuffle=True)
+
 
 if args.optimizer == 'sgd':
     optimizer = torch.optim.SGD(params, lr=args.lr)
@@ -178,29 +182,30 @@ my_log('init_time = {:.3f}'.format(init_time))
 my_log('Training...')
 for step in range(last_step + 1, args.max_step + 1):
     # clear the gradients of all optimized variables
-    optimizer.zero_grad()
-
-    # forward pass: compute predicted outputs by passing inputs to the model
+    cum_loss = 0.0
     train_start_time = time.time()
-    output = net(X_train_scaled)
 
+    for batch_idx, (data, target) in enumerate(data_loader_trn):
+    # forward pass: compute predicted outputs by passing inputs to the model
+        output = net(data)
+    
+        # calculate the loss
+        loss = criterion(output,target)
+        optimizer.zero_grad()
 
-    # calculate the loss
-    loss = criterion(output,y_train_scaled)
-
-    # backward pass: compute gradient of the loss with respect to model parameters
-    loss.backward()
-    if args.clip_grad:
-        nn.utils.clip_grad_norm_(params, args.clip_grad)
-
-    # perform a single optimization step (parameter update)
-    optimizer.step()
-
-    # update running training loss
-    train_loss += loss.item() 
+        # backward pass: compute gradient of the loss with respect to model parameters
+        loss.backward()
+        if args.clip_grad:
+            nn.utils.clip_grad_norm_(params, args.clip_grad)
+    
+        # perform a single optimization step (parameter update)
+        optimizer.step()
+    
+        # update running training loss
+        cum_loss += loss.item() 
     train_time += time.time() - train_start_time
-
-
+    
+    
     if args.print_step and step % args.print_step == 0:
         if step > 0:
             train_time /= args.print_step
