@@ -147,7 +147,7 @@ my_log('Total number of trainable parameters: {}'.format(nparams))
 named_params = list(net.named_parameters())
 
 training_samples = utils_data.TensorDataset(X_train_scaled, y_train_scaled)
-data_loader_trn = utils_data.DataLoader(training_samples, batch_size=200, drop_last=False, shuffle=True)
+data_loader_trn = utils_data.DataLoader(training_samples, batch_size=args.batch_size, drop_last=False, shuffle=True)
 
 
 if args.optimizer == 'sgd':
@@ -178,6 +178,8 @@ train_loss = 0
 start_time = time.time()
 init_time = time.time() - start_time
 my_log('init_time = {:.3f}'.format(init_time))
+tolerance = args.tolerance
+
 
 my_log('Training...')
 for step in range(last_step + 1, args.max_step + 1):
@@ -204,13 +206,14 @@ for step in range(last_step + 1, args.max_step + 1):
         # update running training loss
         cum_loss += loss.item() 
     train_time += time.time() - train_start_time
-    
+     
     
     if args.print_step and step % args.print_step == 0:
         if step > 0:
             train_time /= args.print_step
         used_time = time.time() - start_time
         r2_test = r2_loss(net(X_test_scaled), y_test_scaled)
+        
         r2_train = r2_loss(net(X_train_scaled), y_train_scaled)
         my_log(
             'step = {}, loss = {:.8g}, r2_train = {:.8g}, r2_test = {:.8g}, train_time = {:.3f}, used_time = {:.3f}'
@@ -223,7 +226,15 @@ for step in range(last_step + 1, args.max_step + 1):
                 used_time,
             ))
         train_time = 0
-
+        if r2_train > 1-tolerance:
+            print("Training has coverged with required tolerance")
+            state = {
+                'net': net.state_dict(),
+                'optimizer': optimizer.state_dict(),
+            }
+            torch.save(state, '{}_save/{}.state'.format(
+                args.out_filename, step))
+            break
 
     if (args.out_filename and args.save_step
             and step % args.save_step == 0):

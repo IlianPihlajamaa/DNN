@@ -29,6 +29,9 @@ group.add_argument(
     choices=['sgd', 'sgdm', 'rmsprop', 'adam', 'adam0.5'],
     help='optimizer')
 group.add_argument('--lr', type=float, default=1e-3, help='learning rate')
+group.add_argument('--tolerance', type=float, default=1e-3, help='tolerance for training')
+group.add_argument('--batch_size', type=int, default=200, help='training batch size')
+
 group.add_argument(
     '--max_step', type=int, default=10**3, help='maximum number of steps')
 group.add_argument(
