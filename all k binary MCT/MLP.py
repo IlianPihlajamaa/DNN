@@ -53,5 +53,4 @@ class MLP(nn.Module):
     def forward(self, x):
         x = x.view(x.shape[0], -1)
         x_out = self.net(x)
-
         return x_out

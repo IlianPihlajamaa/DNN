@@ -1,0 +1,48 @@
+batch_size = 100
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.2
+max_step = 1000
+n_in = 303
+n_out = 2
+net_depth = 7
+net_width = (50, 500, 20, 500, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd7_nw-50-500-20-500-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 100
+seed = 48903351
+tolerance = 0.002
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=303, out_features=50, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=50, out_features=500, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=500, out_features=20, bias=True)
+    (5): ReLU()
+    (6): Linear(in_features=20, out_features=500, bias=True)
+    (7): ReLU()
+    (8): Linear(in_features=500, out_features=20, bias=True)
+    (9): ReLU()
+    (10): Linear(in_features=20, out_features=2, bias=True)
+  )
+)
+
+Total number of trainable parameters: 71282
+init_time = 0.000
+Training...
+step = 0, loss = 95041019, r2_train = -105.85356, r2_test = -105.79095, train_time = 6.134, used_time = 7.212
+step = 5, loss = 0.15529927, r2_train = 0.8903056, r2_test = 0.8892584, train_time = 5.830, used_time = 42.614
+step = 10, loss = 0.0073523902, r2_train = 0.95898286, r2_test = 0.95939864, train_time = 5.689, used_time = 77.127
+step = 15, loss = 0.0030888142, r2_train = 0.98737875, r2_test = 0.98741148, train_time = 5.875, used_time = 112.637
+step = 20, loss = 0.0021459884, r2_train = 0.98940034, r2_test = 0.98968303, train_time = 5.722, used_time = 147.263
+step = 25, loss = 0.0016342788, r2_train = 0.99264104, r2_test = 0.99270781, train_time = 5.801, used_time = 182.276

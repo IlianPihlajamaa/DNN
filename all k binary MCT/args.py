@@ -6,7 +6,7 @@ group = parser.add_argument_group('network parameters')
 group.add_argument('--n_in', type=int, default=303, help='number of inputs')
 group.add_argument('--n_out', type=int, default=2, help='number of outputs')
 group.add_argument('--net_depth', type=int, default=6, help='number of total layers')
-group.add_argument('--net_width','--list', nargs='+', default=(100, 100, 100, 20), help='size of the hidden layers')
+group.add_argument('--net_width','--list', nargs='+', default=(200, 100, 50, 20), help='size of the hidden layers')
 group.add_argument('--bias', action='store_true', default=True, help='use bias?')
 group.add_argument(
     '--dtype',
@@ -28,9 +28,9 @@ group.add_argument(
     default='adam',
     choices=['sgd', 'sgdm', 'rmsprop', 'adam', 'adam0.5'],
     help='optimizer')
-group.add_argument('--lr', type=float, default=0.2, help='learning rate')
+group.add_argument('--lr', type=float, default=0.001, help='learning rate')
 group.add_argument('--tolerance', type=float, default=2e-3, help='tolerance for training')
-group.add_argument('--batch_size', type=int, default=100, help='training batch size')
+group.add_argument('--batch_size', type=int, default=300, help='training batch size')
 
 group.add_argument(
     '--max_step', type=int, default=10**3, help='maximum number of steps')
