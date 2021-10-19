@@ -3,7 +3,6 @@ os.chdir(os.path.dirname(os.path.realpath(__file__))) # change working directory
 import pandas as pd
 import time
 import glob
-import seaborn as sns
 import math
 import sys
 import matplotlib.pyplot as plt
@@ -289,7 +288,7 @@ def train_model(net, optimizer, args, params, last_step):
 
 
 path = os.path.dirname(os.path.realpath(__file__))
-num_files = 800
+num_files = 52
 X, y = load_data(num_files, path)
 X_train_scaled, X_test_scaled, y_train_scaled, y_test_scaled, min_max_scalerX, min_max_scalery = rescale_and_split_data(X, y)
 net, optimizer, args, params, last_step, X_train_scaled, X_test_scaled, y_train_scaled, y_test_scaled = define_training_model(X_train_scaled, X_test_scaled, y_train_scaled, y_test_scaled)
@@ -317,7 +316,7 @@ plt.rc('font', size=15)
 k_array = np.linspace(0.2, 39.8, 100)
 plt.plot(k_array, np.std(shap_values[:, :-3], axis=0))
 plt.xlabel(r"Wavelength $k$")
-plt.ylabel("std of S(k) Shaply values")
+plt.ylabel("std of S(k) Shapley values")
 plt.savefig("shaply.png", dpi=300, bbox_inches="tight")
 plt.show()
 
@@ -328,4 +327,4 @@ for i in range(100):
     
 sortedlabels = [labels[i] for i in np.argsort(np.std(shap_values[:, :-3], axis=0))[::-1]]
 print("The most important structure factor values are:")
-print(sortedlabels[:5])
+print(sortedlabels[:10])

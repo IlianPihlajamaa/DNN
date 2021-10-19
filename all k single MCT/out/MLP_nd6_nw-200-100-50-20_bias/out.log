@@ -105,3 +105,87 @@ step = 35, loss = 0.00080131603, r2_train = 0.9946541, r2_test = 0.99459951, tra
 step = 40, loss = 0.00078008898, r2_train = 0.99301738, r2_test = 0.99297229, train_time = 16.365, used_time = 1285.416
 step = 45, loss = 0.00075110352, r2_train = 0.9941857, r2_test = 0.99413919, train_time = 18.492, used_time = 1396.230
 step = 50, loss = 0.00076115418, r2_train = 0.99344743, r2_test = 0.9933936, train_time = 33.295, used_time = 1587.850
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=103, out_features=200, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=200, out_features=100, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=100, out_features=50, bias=True)
+    (5): ReLU()
+    (6): Linear(in_features=50, out_features=20, bias=True)
+    (7): ReLU()
+    (8): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 46991
+init_time = 0.000
+Training...
+step = 0, loss = 0.0046379796, r2_train = 0.99138291, r2_test = 0.99148773, train_time = 13.809, used_time = 15.442
+step = 5, loss = 0.00092060412, r2_train = 0.99335885, r2_test = 0.99351541, train_time = 13.767, used_time = 98.949
+step = 10, loss = 0.00069595562, r2_train = 0.98260738, r2_test = 0.98218942, train_time = 13.238, used_time = 175.443
+step = 15, loss = 0.00052650142, r2_train = 0.9946653, r2_test = 0.99456357, train_time = 15.334, used_time = 262.826
+step = 20, loss = 0.00050627456, r2_train = 0.99553024, r2_test = 0.9955799, train_time = 16.690, used_time = 356.487
+step = 25, loss = 0.00048283856, r2_train = 0.99539534, r2_test = 0.99545948, train_time = 15.928, used_time = 446.410
+step = 30, loss = 0.00048703977, r2_train = 0.99752904, r2_test = 0.99752162, train_time = 16.340, used_time = 538.687
+step = 35, loss = 0.00046942796, r2_train = 0.99437385, r2_test = 0.99429202, train_time = 16.134, used_time = 629.819
+step = 40, loss = 0.00045887294, r2_train = 0.9952585, r2_test = 0.99527443, train_time = 13.565, used_time = 707.302
+step = 45, loss = 0.00046919326, r2_train = 0.99703456, r2_test = 0.99703466, train_time = 13.516, used_time = 784.205
+step = 50, loss = 0.00045960907, r2_train = 0.99735352, r2_test = 0.99732942, train_time = 13.430, used_time = 860.800
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=103, out_features=200, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=200, out_features=100, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=100, out_features=50, bias=True)
+    (5): ReLU()
+    (6): Linear(in_features=50, out_features=20, bias=True)
+    (7): ReLU()
+    (8): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 46991
+init_time = 0.000
+Training...
+step = 0, loss = 0.13776588, r2_train = 0.35178505, r2_test = 0.35555736, train_time = 0.660, used_time = 0.760
+step = 5, loss = 0.0047476576, r2_train = 0.96927153, r2_test = 0.96901204, train_time = 0.814, used_time = 5.524
+step = 10, loss = 0.0032737736, r2_train = 0.97698374, r2_test = 0.97671174, train_time = 0.942, used_time = 10.943
+step = 15, loss = 0.0025406051, r2_train = 0.98165051, r2_test = 0.98125822, train_time = 0.938, used_time = 16.360
+step = 20, loss = 0.0021262444, r2_train = 0.9840839, r2_test = 0.98356324, train_time = 0.892, used_time = 21.589
+step = 25, loss = 0.0018558316, r2_train = 0.98737895, r2_test = 0.98676925, train_time = 0.932, used_time = 26.916
+step = 30, loss = 0.0017022355, r2_train = 0.98579986, r2_test = 0.98561014, train_time = 0.890, used_time = 32.084
+step = 35, loss = 0.0016441658, r2_train = 0.98956028, r2_test = 0.98902201, train_time = 0.961, used_time = 37.609
+step = 40, loss = 0.001779181, r2_train = 0.98733037, r2_test = 0.98681921, train_time = 0.859, used_time = 42.604
+step = 45, loss = 0.001476843, r2_train = 0.98908566, r2_test = 0.98892724, train_time = 0.849, used_time = 47.526
+step = 50, loss = 0.0013560172, r2_train = 0.9864719, r2_test = 0.98621789, train_time = 0.826, used_time = 52.302
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=103, out_features=200, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=200, out_features=100, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=100, out_features=50, bias=True)
+    (5): ReLU()
+    (6): Linear(in_features=50, out_features=20, bias=True)
+    (7): ReLU()
+    (8): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 46991
+init_time = 0.000
+Training...
+step = 0, loss = 0.0034998339, r2_train = 0.99196101, r2_test = 0.99196266, train_time = 11.885, used_time = 13.777
+step = 5, loss = 0.00076266759, r2_train = 0.9895797, r2_test = 0.98956123, train_time = 12.399, used_time = 87.092
+step = 10, loss = 0.00055795122, r2_train = 0.99703461, r2_test = 0.99712526, train_time = 13.424, used_time = 164.273
+step = 15, loss = 0.00052114133, r2_train = 0.99568323, r2_test = 0.9956848, train_time = 14.036, used_time = 244.570
+step = 20, loss = 0.00049916327, r2_train = 0.99533392, r2_test = 0.99542638, train_time = 16.106, used_time = 335.333
+step = 25, loss = 0.00045605776, r2_train = 0.99727992, r2_test = 0.99733793, train_time = 16.890, used_time = 430.187
+step = 30, loss = 0.00046478955, r2_train = 0.99010025, r2_test = 0.99004851, train_time = 16.823, used_time = 524.715
+step = 35, loss = 0.00043773053, r2_train = 0.99569509, r2_test = 0.99581587, train_time = 16.277, used_time = 616.614
+step = 40, loss = 0.00042886971, r2_train = 0.99682779, r2_test = 0.99686122, train_time = 15.315, used_time = 703.216
+step = 45, loss = 0.00043630902, r2_train = 0.99763441, r2_test = 0.99769424, train_time = 15.556, used_time = 791.258
+step = 50, loss = 0.00041621747, r2_train = 0.99628112, r2_test = 0.9963391, train_time = 14.797, used_time = 875.118

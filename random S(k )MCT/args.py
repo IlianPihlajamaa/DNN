@@ -1,4 +1,5 @@
-import argparse
+import argparse, shutil,os
+import numpy as np
 
 parser = argparse.ArgumentParser()
 
@@ -33,7 +34,7 @@ group.add_argument('--tolerance', type=float, default=1e-3, help='tolerance for 
 group.add_argument('--batch_size', type=int, default=300, help='training batch size')
 
 group.add_argument(
-    '--max_step', type=int, default=150, help='maximum number of steps')
+    '--max_step', type=int, default=50, help='maximum number of steps')
 group.add_argument(
     '--clip_grad',
     type=float,
@@ -46,7 +47,7 @@ group.add_argument(
     action='store_true',
     help='do not print log to stdout, for better performance')
 group.add_argument(
-    '--clear_checkpoint', action='store_true', help='clear checkpoint', default=False)
+    '--clear_checkpoint', action='store_true', help='clear checkpoint', default=True)
 group.add_argument(
     '--print_step',
     type=int,

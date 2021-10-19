@@ -1,9 +1,9 @@
 import os
+import shutil
 os.chdir(os.path.dirname(os.path.realpath(__file__))) # change working directory to where this file is located
 import pandas as pd
 import time
 import glob
-import seaborn as sns
 import math
 import sys
 import matplotlib.pyplot as plt
@@ -30,23 +30,23 @@ from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 
 
-def load_data(NS_to_open, path, N_t_perfile=200):
+def load_data(NS_to_open, path, N_t_perfile=200, rhoname="rho"):
 
     # The input data consists of the following informations
     N_input = 103
     N_output = 1
     
-    relative_data_path =  '\\Data\\Sk_data\\Sk_rho*'
+    relative_data_path =  '\\Data\\Sk_data\\Sk_%s*'%rhoname
     listSfiles = shuffle(glob.glob(path + relative_data_path))
     X = np.zeros((num_files*N_t_perfile, N_input))
     y = np.zeros((num_files*N_t_perfile, N_output))
     print('\n*******************\n\t Creating input database: ')
     i = 0 
     for filesopened, Sfile in enumerate(listSfiles[:NS_to_open]):
-        rho = (Sfile.split('_rho_')[1]).split('.txt')[0] # we get rho from the file name
+        rho = (Sfile.split('_%s_'%rhoname)[1]).split('.txt')[0] # we get rho from the file name
         # print('Reading data for rho = ', rho)
         new_in_data = np.loadtxt(Sfile) # Structure factors
-        rhofile = path + '\\Data\\phi_data\\phi_rho_' + rho + '.txt'
+        rhofile = path + '\\Data\\phi_data\\phi_%s_'%rhoname + rho + '.txt'
         new_out_data = np.loadtxt(rhofile)
         X[i:i+N_t_perfile, :-3] = new_in_data[None, :] #Structure factors+rho
         X[i:i+N_t_perfile, -3] = float(rho) # rho
@@ -304,9 +304,8 @@ def train_model(net, optimizer, args, params, last_step):
 #     plt.show()
 #     return
 
-
 path = os.path.dirname(os.path.realpath(__file__))
-num_files = 1000
+num_files = 4000
 X, y = load_data(num_files, path)
 X_train_scaled, X_test_scaled, y_train_scaled, y_test_scaled = rescale_and_split_data(X, y)
 net, optimizer, args, params, last_step, X_train_scaled, X_test_scaled, y_train_scaled, y_test_scaled = define_training_model(X_train_scaled, X_test_scaled, y_train_scaled, y_test_scaled)
@@ -383,7 +382,7 @@ plt.plot(t_array, Ft15[:, 2], color="blue", linestyle="dashed")
 plt.plot(t_array, Ft2[:, 2], color="black", linestyle="dashed")
 plt.ylabel(r"$F(k,t)/S(k)$")
 plt.xlabel(r"$\log_{10}(t)$")
-plt.savefig("example_prediction.png", dpi=300)
+# plt.savefig("example_prediction.png", dpi=300)
 plt.show()
 
 
@@ -395,18 +394,50 @@ plt.plot(k_array, SK15, color="blue")
 plt.plot(k_array, SK2, color="black")
 plt.ylabel(r"$S(k)$")
 plt.xlabel(r"$k$")
-plt.savefig("example_Sk.png", dpi=300)
+# plt.savefig("example_Sk.png", dpi=300)
 plt.show()
-# plt.plot(min_max_scalerX.inverse_transform(example_X)[:,-2], min_max_scalery.inverse_transform(example_prediction.drhoch().numpy())[:, 0], label="DNN FAA", lw=2)
-# # plt.plot(min_max_scalerX.inverse_transform(example_X)[:,-2], min_max_scalery.inverse_transform(example_prediction.drhoch().numpy())[:,1], label="DNN FAB", lw=2)
-# plt.plot(min_max_scalerX.inverse_transform(example_X)[:,-2], min_max_scalery.inverse_transform(example_prediction.drhoch().numpy())[:,1], label="DNN FBB", lw=2)
-# plt.plot(Ft05[:,0], Ft05[:,2], 'o', ms=2, label="MCT FBB")
-# # plt.plot(Ft05[:,0], Ft05[:,3], 'o', ms=2, label="MCT FAB")
-# plt.plot(Ft05[:,0], Ft05[:,4], 'o', ms=2, label="MCT FAA")
-# plt.legend()
-# plt.ylim([0, 1])
-# plt.xlabel("log10(t)")
-# plt.ylabel("rho(k,t) at kD=%.2f" %Ft05[1, 1])
-# plt.title("volume fraction = %.2f"%rho05)
-# plt.savefig(path+"\\predictionDNN050.png", dpi=500, bbox_inches="tight")
-# plt.show()
+
+
+import shap
+# Xreal, yreal = load_data(500, "D:\\Program Files\\OneDrive - TU Eindhoven\\PhD project\Machine Learning\\DNN-pytorch\\all k single MCT", N_t_perfile=1000, rhoname="eta")
+Xreal, yreal = load_data(500, "C:\\Users\\s158686\\OneDrive - TU Eindhoven\\PhD project\Machine Learning\\DNN-pytorch\\all k single MCT", N_t_perfile=1000, rhoname="eta")
+Xreal_train_scaled, Xreal_test_scaled, yreal_train_scaled, yreal_test_scaled = rescale_and_split_data(Xreal, yreal)
+
+# Calculate shaply values
+begin = time.time()
+(data, target) = next(iter(data_loader_trn))
+explainer = shap.DeepExplainer(net, torch.tensor(Xreal_train_scaled[1:1000]))
+shap_values = explainer.shap_values(torch.tensor(Xreal_test_scaled[1:1000]))
+print("elapsed time = ", time.time()-begin)
+
+# visualize 
+plt.rc('text', usetex=True)
+plt.rc('font', family='serif')
+plt.rc('font', size=12)
+k_array = np.linspace(0.2, 39.8, 100)
+plt.plot(k_array, np.std(shap_values[:, :-3], axis=0))
+plt.xlabel(r"Wavelength $k$")
+plt.ylabel("std of S(k) Shapley values")
+# plt.savefig("shaply_%d.png" %ii, dpi=300, bbox_inches="tight")
+plt.show()
+plt.rc('text', usetex=True)
+plt.rc('font', family='serif')
+plt.rc('font', size=25)
+labels = []
+for i in range(100):
+    labels.append("%.1f"%(k_array[i]))
+
+# np.savetxt("shap_%d.txt" %ii,  np.std(shap_values[:, :-3], axis=0))
+sortedlabels = [labels[i] for i in np.argsort(np.std(shap_values[:, :-3], axis=0))[::-1]]
+print("The most important structure factor values are:")
+print(sortedlabels[:10])
+first_shap_sorted = shap_values[:, np.argsort(np.std(shap_values[:, :-3], axis=0))][:, -10:][:, -1:0:-1]
+
+plt.figure(figsize=[10,10])
+for i in range(9):
+    plt.plot([i for j in range(999)], first_shap_sorted[:, i], "o", ms=2)
+    
+plt.xticks([i for i in range(9)], sortedlabels[:9], fontsize=18)
+plt.ylabel("Shap values")
+plt.xlabel("S(k)")
+plt.savefig("shap_beeswarm.png")

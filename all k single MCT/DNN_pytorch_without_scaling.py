@@ -3,7 +3,6 @@ os.chdir(os.path.dirname(os.path.realpath(__file__))) # change working directory
 import pandas as pd
 import time
 import glob
-import seaborn as sns
 import math
 import sys
 import matplotlib.pyplot as plt
@@ -66,11 +65,7 @@ def rescale_and_split_data(X, y):
     min_max_scalerX = sklearn.preprocessing.MinMaxScaler()
     min_max_scalery = sklearn.preprocessing.MinMaxScaler()
     
-    X_scaled = X.copy()
-    X_scaled = min_max_scalerX.fit_transform(X_scaled)
-    
-    y_scaled = y.copy()
-    y_scaled = min_max_scalery.fit_transform(y_scaled)
+
     
     # Use sklearn to make train and test sets
     X_train_scaled, X_test_scaled, y_train_scaled, y_test_scaled = train_test_split(X, y, test_size=0.2, random_state=5)
@@ -317,7 +312,7 @@ plt.rc('font', size=15)
 k_array = np.linspace(0.2, 39.8, 100)
 plt.plot(k_array, np.std(shap_values[:, :-3], axis=0))
 plt.xlabel(r"Wavelength $k$")
-plt.ylabel("std of S(k) Shaply values")
+plt.ylabel("std of S(k) Shapley values")
 plt.savefig("shaply_withoutMinMax.png", dpi=300, bbox_inches="tight")
 plt.show()
 

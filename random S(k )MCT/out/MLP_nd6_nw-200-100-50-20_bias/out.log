@@ -1,12 +1,12 @@
 batch_size = 300
 bias = True
-clear_checkpoint = False
+clear_checkpoint = True
 clip_grad = 0
 cuda = -1
 device = cpu
 dtype = float64
 lr = 0.001
-max_step = 150
+max_step = 50
 n_in = 103
 n_out = 1
 net_depth = 6
@@ -18,39 +18,9 @@ out_filename = out/MLP_nd6_nw-200-100-50-20_bias/out
 out_infix = 
 print_step = 5
 save_step = 10
-seed = 59885988
+seed = 98979144
 tolerance = 0.001
 
 init_time = 0.000
 Training...
-step = 0, loss = 0.020369912, r2_train = 0.9488081, r2_test = 0.94705556, train_time = 3.781, used_time = 4.208
-step = 5, loss = 0.0005295112, r2_train = 0.98464972, r2_test = 0.9833007, train_time = 3.497, used_time = 24.481
-step = 10, loss = 0.00042556917, r2_train = 0.98669251, r2_test = 0.98592908, train_time = 3.148, used_time = 42.910
-step = 15, loss = 0.00036067899, r2_train = 0.98520107, r2_test = 0.98480901, train_time = 3.168, used_time = 61.333
-step = 20, loss = 0.00035963974, r2_train = 0.98636074, r2_test = 0.98605858, train_time = 3.170, used_time = 79.834
-step = 25, loss = 0.00029117601, r2_train = 0.98592606, r2_test = 0.98557755, train_time = 3.285, used_time = 98.933
-step = 30, loss = 0.00032646133, r2_train = 0.98625699, r2_test = 0.98583573, train_time = 3.593, used_time = 120.160
-step = 35, loss = 0.00031755412, r2_train = 0.98870256, r2_test = 0.98828499, train_time = 3.975, used_time = 143.815
-step = 40, loss = 0.0003193901, r2_train = 0.9878362, r2_test = 0.98754615, train_time = 3.880, used_time = 167.497
-step = 45, loss = 0.00036010668, r2_train = 0.98844134, r2_test = 0.98810368, train_time = 3.704, used_time = 190.505
-step = 50, loss = 0.00030352167, r2_train = 0.98972673, r2_test = 0.98928197, train_time = 4.653, used_time = 222.542
-step = 55, loss = 0.00029281643, r2_train = 0.99047255, r2_test = 0.99016287, train_time = 4.690, used_time = 255.118
-step = 60, loss = 0.0026247341, r2_train = 0.98460825, r2_test = 0.98393242, train_time = 4.058, used_time = 280.892
-step = 65, loss = 0.00028612191, r2_train = 0.99048075, r2_test = 0.99000032, train_time = 3.782, used_time = 305.403
-step = 70, loss = 0.0002694873, r2_train = 0.98992379, r2_test = 0.98941768, train_time = 4.995, used_time = 340.532
-step = 75, loss = 0.00024193258, r2_train = 0.99004147, r2_test = 0.98983567, train_time = 5.051, used_time = 376.918
-step = 80, loss = 0.000236527, r2_train = 0.99032127, r2_test = 0.99014828, train_time = 4.597, used_time = 407.716
-step = 85, loss = 0.00027051547, r2_train = 0.98913983, r2_test = 0.98884065, train_time = 4.078, used_time = 433.346
-step = 90, loss = 0.00027998134, r2_train = 0.98880288, r2_test = 0.98802036, train_time = 5.034, used_time = 468.104
-step = 95, loss = 0.00025846813, r2_train = 0.98467784, r2_test = 0.98402479, train_time = 6.107, used_time = 513.710
-step = 100, loss = 0.0002439252, r2_train = 0.99183479, r2_test = 0.99161127, train_time = 5.126, used_time = 548.586
-step = 105, loss = 0.00024358152, r2_train = 0.98994625, r2_test = 0.98959737, train_time = 3.497, used_time = 569.116
-step = 110, loss = 0.00024165295, r2_train = 0.99237872, r2_test = 0.99226852, train_time = 3.837, used_time = 592.810
-step = 115, loss = 0.0002353705, r2_train = 0.99272154, r2_test = 0.99265886, train_time = 4.137, used_time = 618.757
-step = 120, loss = 0.00027021585, r2_train = 0.99179133, r2_test = 0.99144634, train_time = 4.130, used_time = 644.927
-step = 125, loss = 0.00022719966, r2_train = 0.99024577, r2_test = 0.99025583, train_time = 3.888, used_time = 668.805
-step = 130, loss = 0.00022696985, r2_train = 0.98823969, r2_test = 0.98788316, train_time = 3.469, used_time = 688.694
-step = 135, loss = 0.00053695509, r2_train = 0.9901167, r2_test = 0.99006486, train_time = 3.044, used_time = 706.233
-step = 140, loss = 0.003066897, r2_train = 0.98889318, r2_test = 0.98800779, train_time = 3.324, used_time = 726.530
-step = 145, loss = 0.00023270328, r2_train = 0.99270098, r2_test = 0.99245825, train_time = 3.478, used_time = 747.998
-step = 150, loss = 0.00022139496, r2_train = 0.99146087, r2_test = 0.99106902, train_time = 3.220, used_time = 767.398
+step = 0, loss = 0.0003420264, r2_train = 0.98819234, r2_test = 0.98804315, train_time = 19.933, used_time = 23.732
