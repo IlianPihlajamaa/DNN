@@ -1,0 +1,6792 @@
+batch_size = 300
+bias = True
+clear_checkpoint = True
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 42806937
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+step = 0, loss = 1.4079464, r2_train = 0.16265269, r2_test = 0.16182478, train_time = 33.693, used_time = 39.281
+step = 5, loss = 0.73338747, r2_train = 0.13330353, r2_test = 0.1326419, train_time = 24.770, used_time = 168.619
+step = 10, loss = 0.59462406, r2_train = 0.11856363, r2_test = 0.11782808, train_time = 24.512, used_time = 296.618
+step = 15, loss = 0.51915398, r2_train = 0.11770471, r2_test = 0.11726934, train_time = 24.608, used_time = 425.353
+step = 20, loss = 0.46343813, r2_train = 0.099269362, r2_test = 0.099236107, train_time = 24.776, used_time = 554.761
+step = 25, loss = 0.425493, r2_train = 0.086707787, r2_test = 0.086243106, train_time = 25.128, used_time = 685.847
+step = 30, loss = 0.3875495, r2_train = 0.081723549, r2_test = 0.081650124, train_time = 24.288, used_time = 812.639
+step = 35, loss = 0.35781317, r2_train = 0.12222838, r2_test = 0.12103666, train_time = 24.304, used_time = 939.591
+step = 40, loss = 0.33680287, r2_train = 0.079839457, r2_test = 0.079781237, train_time = 23.991, used_time = 1064.811
+step = 45, loss = 0.31628356, r2_train = 0.06883713, r2_test = 0.069713774, train_time = 23.971, used_time = 1190.161
+step = 50, loss = 0.30081261, r2_train = 0.061955164, r2_test = 0.062626969, train_time = 24.143, used_time = 1316.166
+step = 55, loss = 0.27705875, r2_train = 0.070516092, r2_test = 0.071892629, train_time = 24.247, used_time = 1442.826
+step = 60, loss = 0.26826758, r2_train = 0.047880388, r2_test = 0.050036301, train_time = 24.157, used_time = 1569.071
+step = 65, loss = 0.25805736, r2_train = 0.046431824, r2_test = 0.048535663, train_time = 24.177, used_time = 1695.310
+step = 70, loss = 0.2499526, r2_train = 0.051553627, r2_test = 0.053119703, train_time = 24.275, used_time = 1822.046
+step = 75, loss = 0.23429068, r2_train = 0.041404057, r2_test = 0.042780728, train_time = 24.033, used_time = 1947.610
+step = 80, loss = 0.2250253, r2_train = 0.039394876, r2_test = 0.041185365, train_time = 24.139, used_time = 2073.669
+step = 85, loss = 0.22094646, r2_train = 0.035508839, r2_test = 0.037196368, train_time = 24.062, used_time = 2199.316
+step = 90, loss = 0.21283778, r2_train = 0.04190544, r2_test = 0.042891406, train_time = 24.173, used_time = 2325.502
+step = 95, loss = 0.20522576, r2_train = 0.037250385, r2_test = 0.038932353, train_time = 24.018, used_time = 2451.009
+step = 100, loss = 0.20462378, r2_train = 0.042664082, r2_test = 0.043293581, train_time = 24.083, used_time = 2576.920
+step = 105, loss = 0.19488417, r2_train = 0.03437527, r2_test = 0.036000698, train_time = 23.859, used_time = 2701.524
+step = 110, loss = 0.19383212, r2_train = 0.033893604, r2_test = 0.035301688, train_time = 24.174, used_time = 2827.829
+step = 115, loss = 0.19011108, r2_train = 0.032827914, r2_test = 0.034194763, train_time = 24.298, used_time = 2954.686
+step = 120, loss = 0.18590579, r2_train = 0.031870674, r2_test = 0.033085035, train_time = 24.149, used_time = 3080.764
+step = 125, loss = 0.17789425, r2_train = 0.033685684, r2_test = 0.035321795, train_time = 24.318, used_time = 3207.749
+step = 130, loss = 0.17842743, r2_train = 0.028900737, r2_test = 0.03091189, train_time = 24.199, used_time = 3334.087
+step = 135, loss = 0.17562509, r2_train = 0.029510973, r2_test = 0.031369859, train_time = 24.255, used_time = 3460.726
+step = 140, loss = 0.17458332, r2_train = 0.028174815, r2_test = 0.030224886, train_time = 24.141, used_time = 3586.770
+step = 145, loss = 0.16848909, r2_train = 0.028427699, r2_test = 0.030890152, train_time = 24.261, used_time = 3713.571
+step = 150, loss = 0.16914384, r2_train = 0.028592416, r2_test = 0.030404308, train_time = 24.218, used_time = 3840.063
+step = 155, loss = 0.1650596, r2_train = 0.026453267, r2_test = 0.028611166, train_time = 24.103, used_time = 3965.971
+step = 160, loss = 0.16311475, r2_train = 0.027092637, r2_test = 0.028637434, train_time = 24.077, used_time = 4091.736
+step = 165, loss = 0.16166971, r2_train = 0.025666108, r2_test = 0.027958431, train_time = 24.183, used_time = 4218.043
+step = 170, loss = 0.16018325, r2_train = 0.028055959, r2_test = 0.0304785, train_time = 24.120, used_time = 4344.021
+step = 175, loss = 0.15894846, r2_train = 0.023623754, r2_test = 0.025980179, train_time = 24.120, used_time = 4470.130
+step = 180, loss = 0.1564803, r2_train = 0.027197835, r2_test = 0.029827472, train_time = 24.245, used_time = 4596.768
+step = 185, loss = 0.15727323, r2_train = 0.025457396, r2_test = 0.027748574, train_time = 24.156, used_time = 4722.993
+step = 190, loss = 0.15344047, r2_train = 0.02512636, r2_test = 0.027220834, train_time = 24.229, used_time = 4849.467
+step = 195, loss = 0.15259394, r2_train = 0.029527343, r2_test = 0.030796629, train_time = 24.171, used_time = 4975.804
+step = 200, loss = 0.15283326, r2_train = 0.022529953, r2_test = 0.024498788, train_time = 24.319, used_time = 5102.756
+step = 205, loss = 0.15303031, r2_train = 0.023015171, r2_test = 0.025246119, train_time = 24.235, used_time = 5229.525
+step = 210, loss = 0.15277701, r2_train = 0.024504019, r2_test = 0.025819, train_time = 24.219, used_time = 5355.983
+step = 215, loss = 0.14949886, r2_train = 0.020922497, r2_test = 0.02245401, train_time = 24.170, used_time = 5482.286
+step = 220, loss = 0.15015841, r2_train = 0.032211471, r2_test = 0.03294581, train_time = 24.163, used_time = 5608.538
+step = 225, loss = 0.14848632, r2_train = 0.029854854, r2_test = 0.031171488, train_time = 24.157, used_time = 5734.624
+step = 230, loss = 0.14733262, r2_train = 0.022420895, r2_test = 0.024207234, train_time = 24.057, used_time = 5860.272
+step = 235, loss = 0.14776826, r2_train = 0.023492126, r2_test = 0.02490627, train_time = 24.027, used_time = 5985.835
+step = 240, loss = 0.14642537, r2_train = 0.029097948, r2_test = 0.03006692, train_time = 24.057, used_time = 6111.501
+step = 245, loss = 0.14513914, r2_train = 0.027475471, r2_test = 0.027989468, train_time = 24.159, used_time = 6237.766
+step = 250, loss = 0.1419779, r2_train = 0.024183183, r2_test = 0.026219067, train_time = 24.112, used_time = 6363.670
+step = 255, loss = 0.14725342, r2_train = 0.026757569, r2_test = 0.027736043, train_time = 24.123, used_time = 6489.738
+step = 260, loss = 0.14556652, r2_train = 0.022132846, r2_test = 0.024020288, train_time = 24.133, used_time = 6615.756
+step = 265, loss = 0.14217309, r2_train = 0.035463737, r2_test = 0.035427746, train_time = 24.116, used_time = 6741.810
+step = 270, loss = 0.14121798, r2_train = 0.030570137, r2_test = 0.030724989, train_time = 24.114, used_time = 6867.777
+step = 275, loss = 0.14283849, r2_train = 0.032726593, r2_test = 0.0336171, train_time = 24.176, used_time = 6994.072
+step = 280, loss = 0.14190378, r2_train = 0.024734876, r2_test = 0.026206158, train_time = 24.174, used_time = 7120.310
+step = 285, loss = 0.1420388, r2_train = 0.024163125, r2_test = 0.02605698, train_time = 24.169, used_time = 7246.600
+step = 290, loss = 0.14039581, r2_train = 0.020620415, r2_test = 0.022315527, train_time = 24.077, used_time = 7372.396
+step = 295, loss = 0.13835103, r2_train = 0.020632359, r2_test = 0.02159988, train_time = 24.143, used_time = 7498.458
+step = 300, loss = 0.13940158, r2_train = 0.021821518, r2_test = 0.023604191, train_time = 24.121, used_time = 7624.320
+step = 305, loss = 0.13805619, r2_train = 0.02593942, r2_test = 0.027894642, train_time = 24.212, used_time = 7750.771
+step = 310, loss = 0.14156203, r2_train = 0.020795737, r2_test = 0.022728001, train_time = 24.150, used_time = 7876.885
+step = 315, loss = 0.13800552, r2_train = 0.020541579, r2_test = 0.021716254, train_time = 24.179, used_time = 8003.229
+step = 320, loss = 0.13857852, r2_train = 0.027656405, r2_test = 0.02940352, train_time = 24.138, used_time = 8129.301
+step = 325, loss = 0.13745516, r2_train = 0.023076353, r2_test = 0.024782048, train_time = 24.037, used_time = 8254.973
+step = 330, loss = 0.13572998, r2_train = 0.020679229, r2_test = 0.022349367, train_time = 24.150, used_time = 8381.112
+step = 335, loss = 0.13649239, r2_train = 0.019067246, r2_test = 0.021059358, train_time = 24.079, used_time = 8506.855
+step = 340, loss = 0.13614448, r2_train = 0.021608406, r2_test = 0.023485044, train_time = 24.090, used_time = 8632.684
+step = 345, loss = 0.1367136, r2_train = 0.020391713, r2_test = 0.022415787, train_time = 24.073, used_time = 8758.512
+step = 350, loss = 0.13285415, r2_train = 0.03480919, r2_test = 0.036024789, train_time = 24.249, used_time = 8885.145
+step = 355, loss = 0.13516239, r2_train = 0.019847751, r2_test = 0.021561626, train_time = 24.196, used_time = 9011.506
+step = 360, loss = 0.13627653, r2_train = 0.020725167, r2_test = 0.022860164, train_time = 24.179, used_time = 9137.799
+step = 365, loss = 0.13593865, r2_train = 0.02693408, r2_test = 0.027328777, train_time = 24.181, used_time = 9264.098
+step = 370, loss = 0.13527522, r2_train = 0.028821879, r2_test = 0.030329692, train_time = 24.121, used_time = 9390.084
+step = 375, loss = 0.13306625, r2_train = 0.018918083, r2_test = 0.020948791, train_time = 24.222, used_time = 9516.604
+step = 380, loss = 0.13169437, r2_train = 0.021897988, r2_test = 0.023735547, train_time = 24.161, used_time = 9642.755
+step = 385, loss = 0.13315987, r2_train = 0.030039348, r2_test = 0.030904168, train_time = 24.144, used_time = 9768.858
+step = 390, loss = 0.13286031, r2_train = 0.020309517, r2_test = 0.02213059, train_time = 24.215, used_time = 9895.207
+step = 395, loss = 0.13371033, r2_train = 0.019401566, r2_test = 0.020687672, train_time = 24.127, used_time = 10021.192
+step = 400, loss = 0.13231274, r2_train = 0.018416386, r2_test = 0.019994372, train_time = 24.172, used_time = 10147.424
+step = 405, loss = 0.1340685, r2_train = 0.019358332, r2_test = 0.021475649, train_time = 24.061, used_time = 10273.147
+step = 410, loss = 0.12806396, r2_train = 0.021131119, r2_test = 0.022457094, train_time = 24.067, used_time = 10398.887
+step = 415, loss = 0.13162344, r2_train = 0.026101335, r2_test = 0.026858954, train_time = 24.123, used_time = 10524.919
+step = 420, loss = 0.13175809, r2_train = 0.019016078, r2_test = 0.020853992, train_time = 24.097, used_time = 10650.781
+step = 425, loss = 0.13338017, r2_train = 0.021642961, r2_test = 0.023473188, train_time = 24.123, used_time = 10776.808
+step = 430, loss = 0.13266873, r2_train = 0.028792503, r2_test = 0.030626133, train_time = 24.143, used_time = 10902.950
+step = 435, loss = 0.12916387, r2_train = 0.021940335, r2_test = 0.023964337, train_time = 24.117, used_time = 11028.946
+step = 440, loss = 0.12979818, r2_train = 0.017502439, r2_test = 0.01962987, train_time = 24.080, used_time = 11154.792
+step = 445, loss = 0.13052076, r2_train = 0.022566855, r2_test = 0.023981928, train_time = 24.176, used_time = 11281.082
+step = 450, loss = 0.13048847, r2_train = 0.02326946, r2_test = 0.02481844, train_time = 24.133, used_time = 11407.190
+step = 455, loss = 0.1283993, r2_train = 0.019267585, r2_test = 0.021183163, train_time = 24.182, used_time = 11533.562
+step = 460, loss = 0.12952889, r2_train = 0.021351031, r2_test = 0.023204624, train_time = 24.083, used_time = 11659.327
+step = 465, loss = 0.12859909, r2_train = 0.021457485, r2_test = 0.023267908, train_time = 24.226, used_time = 11785.852
+step = 470, loss = 0.12829268, r2_train = 0.019281364, r2_test = 0.020943942, train_time = 24.153, used_time = 11912.074
+step = 475, loss = 0.12716358, r2_train = 0.020622666, r2_test = 0.0220189, train_time = 24.225, used_time = 12038.647
+step = 480, loss = 0.12917957, r2_train = 0.018162422, r2_test = 0.020089692, train_time = 24.103, used_time = 12164.460
+step = 485, loss = 0.12937187, r2_train = 0.026797167, r2_test = 0.028897518, train_time = 24.285, used_time = 12291.277
+step = 490, loss = 0.12793761, r2_train = 0.020840621, r2_test = 0.023128774, train_time = 24.219, used_time = 12417.768
+step = 495, loss = 0.13014622, r2_train = 0.019706641, r2_test = 0.021388708, train_time = 23.994, used_time = 12543.203
+step = 500, loss = 0.12787988, r2_train = 0.019386784, r2_test = 0.020467533, train_time = 24.155, used_time = 12669.353
+step = 505, loss = 0.12635854, r2_train = 0.018233476, r2_test = 0.019705556, train_time = 24.144, used_time = 12795.503
+step = 510, loss = 0.12664328, r2_train = 0.01967156, r2_test = 0.021273241, train_time = 24.927, used_time = 12925.550
+step = 515, loss = 0.12620642, r2_train = 0.02182376, r2_test = 0.022903262, train_time = 24.433, used_time = 13053.152
+step = 520, loss = 0.12492524, r2_train = 0.018582676, r2_test = 0.020408332, train_time = 24.706, used_time = 13182.029
+step = 525, loss = 0.12582449, r2_train = 0.019253467, r2_test = 0.021060103, train_time = 24.804, used_time = 13311.511
+step = 530, loss = 0.12702497, r2_train = 0.019231469, r2_test = 0.021234667, train_time = 24.898, used_time = 13441.436
+step = 535, loss = 0.12599648, r2_train = 0.021153079, r2_test = 0.022283872, train_time = 24.871, used_time = 13571.198
+step = 540, loss = 0.1259826, r2_train = 0.022644308, r2_test = 0.024215506, train_time = 24.887, used_time = 13701.046
+step = 545, loss = 0.12797239, r2_train = 0.032868997, r2_test = 0.033973075, train_time = 24.888, used_time = 13830.934
+step = 550, loss = 0.12556956, r2_train = 0.017782845, r2_test = 0.019640192, train_time = 24.907, used_time = 13960.876
+step = 555, loss = 0.12536004, r2_train = 0.023350297, r2_test = 0.025146636, train_time = 24.976, used_time = 14091.239
+step = 560, loss = 0.12480349, r2_train = 0.018539972, r2_test = 0.019838217, train_time = 25.070, used_time = 14222.020
+step = 565, loss = 0.12519883, r2_train = 0.020540529, r2_test = 0.022297339, train_time = 25.043, used_time = 14352.753
+step = 570, loss = 0.12403121, r2_train = 0.037843382, r2_test = 0.039329142, train_time = 24.988, used_time = 14483.109
+step = 575, loss = 0.12317591, r2_train = 0.017709882, r2_test = 0.019130459, train_time = 25.061, used_time = 14613.789
+step = 580, loss = 0.12473401, r2_train = 0.018454847, r2_test = 0.019923918, train_time = 24.966, used_time = 14744.107
+step = 585, loss = 0.12327955, r2_train = 0.018809599, r2_test = 0.020514201, train_time = 25.006, used_time = 14874.644
+step = 590, loss = 0.12612008, r2_train = 0.032442509, r2_test = 0.033989538, train_time = 25.111, used_time = 15005.578
+step = 595, loss = 0.12316553, r2_train = 0.018716636, r2_test = 0.020137917, train_time = 25.029, used_time = 15136.082
+step = 600, loss = 0.12475164, r2_train = 0.022600827, r2_test = 0.025317765, train_time = 24.125, used_time = 15262.054
+step = 605, loss = 0.12456551, r2_train = 0.018015543, r2_test = 0.019879877, train_time = 23.275, used_time = 15383.855
+step = 610, loss = 0.12524897, r2_train = 0.01770276, r2_test = 0.019262829, train_time = 22.973, used_time = 15504.054
+step = 615, loss = 0.12243061, r2_train = 0.018641377, r2_test = 0.01991817, train_time = 22.880, used_time = 15623.841
+step = 620, loss = 0.12421552, r2_train = 0.019074555, r2_test = 0.020835941, train_time = 22.795, used_time = 15743.288
+step = 625, loss = 0.12128318, r2_train = 0.021578445, r2_test = 0.022982672, train_time = 23.031, used_time = 15863.795
+step = 630, loss = 0.1237969, r2_train = 0.019891128, r2_test = 0.021437448, train_time = 22.898, used_time = 15983.682
+step = 635, loss = 0.12277842, r2_train = 0.021785885, r2_test = 0.02324793, train_time = 23.113, used_time = 16104.687
+step = 640, loss = 0.12329761, r2_train = 0.019294856, r2_test = 0.020372334, train_time = 23.083, used_time = 16225.476
+step = 645, loss = 0.12350158, r2_train = 0.030501298, r2_test = 0.031275618, train_time = 22.804, used_time = 16344.897
+step = 650, loss = 0.12345709, r2_train = 0.025812374, r2_test = 0.027330019, train_time = 23.245, used_time = 16466.403
+step = 655, loss = 0.1230598, r2_train = 0.017331852, r2_test = 0.01859697, train_time = 22.950, used_time = 16586.529
+step = 660, loss = 0.12144714, r2_train = 0.02057397, r2_test = 0.02227571, train_time = 23.043, used_time = 16707.028
+step = 665, loss = 0.12287578, r2_train = 0.019486508, r2_test = 0.0206402, train_time = 23.035, used_time = 16827.594
+step = 670, loss = 0.12181719, r2_train = 0.017774508, r2_test = 0.019034466, train_time = 23.052, used_time = 16948.296
+step = 675, loss = 0.12133963, r2_train = 0.0192335, r2_test = 0.020694186, train_time = 23.118, used_time = 17069.298
+step = 680, loss = 0.12276679, r2_train = 0.018911272, r2_test = 0.020414182, train_time = 23.066, used_time = 17189.993
+step = 685, loss = 0.12314648, r2_train = 0.016675878, r2_test = 0.018050913, train_time = 23.066, used_time = 17310.757
+step = 690, loss = 0.12283995, r2_train = 0.023374809, r2_test = 0.024314457, train_time = 23.233, used_time = 17432.347
+step = 695, loss = 0.12021688, r2_train = 0.01826889, r2_test = 0.019509992, train_time = 23.106, used_time = 17553.290
+step = 700, loss = 0.12208685, r2_train = 0.020357373, r2_test = 0.02214257, train_time = 23.054, used_time = 17673.868
+step = 705, loss = 0.12214432, r2_train = 0.023106399, r2_test = 0.02418715, train_time = 22.982, used_time = 17794.224
+step = 710, loss = 0.12175691, r2_train = 0.01814072, r2_test = 0.019277146, train_time = 23.146, used_time = 17915.397
+step = 715, loss = 0.12198351, r2_train = 0.017699972, r2_test = 0.019235424, train_time = 23.050, used_time = 18035.830
+step = 720, loss = 0.12042738, r2_train = 0.018089077, r2_test = 0.019680482, train_time = 23.133, used_time = 18156.759
+step = 725, loss = 0.1221698, r2_train = 0.018640704, r2_test = 0.019389392, train_time = 23.041, used_time = 18277.016
+step = 730, loss = 0.12123341, r2_train = 0.017448656, r2_test = 0.018803873, train_time = 23.131, used_time = 18397.787
+step = 735, loss = 0.12194807, r2_train = 0.022292839, r2_test = 0.023394727, train_time = 23.058, used_time = 18518.352
+step = 740, loss = 0.12246145, r2_train = 0.023359747, r2_test = 0.024222059, train_time = 23.237, used_time = 18639.632
+step = 745, loss = 0.12126162, r2_train = 0.024219944, r2_test = 0.024973942, train_time = 23.213, used_time = 18761.073
+step = 750, loss = 0.11834431, r2_train = 0.019091175, r2_test = 0.019933708, train_time = 23.000, used_time = 18881.372
+step = 755, loss = 0.11907569, r2_train = 0.018167718, r2_test = 0.019639224, train_time = 23.089, used_time = 19002.162
+step = 760, loss = 0.12058058, r2_train = 0.022876237, r2_test = 0.024482547, train_time = 23.016, used_time = 19122.581
+step = 765, loss = 0.121414, r2_train = 0.018330612, r2_test = 0.019980902, train_time = 22.955, used_time = 19242.787
+step = 770, loss = 0.12143395, r2_train = 0.01771281, r2_test = 0.019862572, train_time = 23.088, used_time = 19363.584
+step = 775, loss = 0.12067032, r2_train = 0.021843242, r2_test = 0.023946327, train_time = 23.037, used_time = 19484.254
+step = 780, loss = 0.12042202, r2_train = 0.021030704, r2_test = 0.021936561, train_time = 23.163, used_time = 19605.507
+step = 785, loss = 0.11879206, r2_train = 0.016054278, r2_test = 0.017658446, train_time = 23.149, used_time = 19726.778
+step = 790, loss = 0.12171452, r2_train = 0.021225362, r2_test = 0.022598687, train_time = 23.207, used_time = 19848.230
+step = 795, loss = 0.11879704, r2_train = 0.017980814, r2_test = 0.019647175, train_time = 23.155, used_time = 19969.397
+step = 800, loss = 0.12022273, r2_train = 0.017369751, r2_test = 0.019019057, train_time = 22.985, used_time = 20089.779
+step = 805, loss = 0.12023695, r2_train = 0.021121483, r2_test = 0.02253208, train_time = 23.148, used_time = 20210.923
+step = 810, loss = 0.12164525, r2_train = 0.018940351, r2_test = 0.020803436, train_time = 23.190, used_time = 20332.277
+step = 815, loss = 0.11849835, r2_train = 0.025195378, r2_test = 0.026042617, train_time = 23.217, used_time = 20453.790
+step = 820, loss = 0.1197471, r2_train = 0.019084712, r2_test = 0.020945728, train_time = 23.322, used_time = 20575.882
+step = 825, loss = 0.1176067, r2_train = 0.020722139, r2_test = 0.021245304, train_time = 23.417, used_time = 20698.447
+step = 830, loss = 0.11984434, r2_train = 0.018633351, r2_test = 0.020425438, train_time = 22.852, used_time = 20818.206
+step = 835, loss = 0.12093398, r2_train = 0.019564712, r2_test = 0.02085995, train_time = 22.823, used_time = 20937.832
+step = 840, loss = 0.11810331, r2_train = 0.017242139, r2_test = 0.018498929, train_time = 23.101, used_time = 21058.698
+step = 845, loss = 0.12104199, r2_train = 0.018694299, r2_test = 0.020034204, train_time = 23.135, used_time = 21179.765
+step = 850, loss = 0.11616189, r2_train = 0.023158726, r2_test = 0.025428909, train_time = 23.164, used_time = 21300.968
+step = 855, loss = 0.11875283, r2_train = 0.019533425, r2_test = 0.021503553, train_time = 23.030, used_time = 21421.599
+step = 860, loss = 0.11820381, r2_train = 0.017315284, r2_test = 0.018892891, train_time = 23.205, used_time = 21542.935
+step = 865, loss = 0.12169186, r2_train = 0.022163999, r2_test = 0.023255057, train_time = 23.117, used_time = 21664.081
+step = 870, loss = 0.11962761, r2_train = 0.016757279, r2_test = 0.017996998, train_time = 23.319, used_time = 21785.953
+step = 875, loss = 0.11696872, r2_train = 0.017340539, r2_test = 0.018384033, train_time = 23.198, used_time = 21907.419
+step = 880, loss = 0.11853838, r2_train = 0.021605166, r2_test = 0.022454105, train_time = 23.171, used_time = 22028.743
+step = 885, loss = 0.11766235, r2_train = 0.020723023, r2_test = 0.022018973, train_time = 23.087, used_time = 22149.504
+step = 890, loss = 0.11861839, r2_train = 0.018331792, r2_test = 0.019622238, train_time = 23.079, used_time = 22270.267
+step = 895, loss = 0.12227005, r2_train = 0.020544106, r2_test = 0.021355756, train_time = 23.070, used_time = 22391.196
+step = 900, loss = 0.11966355, r2_train = 0.017545092, r2_test = 0.019420183, train_time = 23.034, used_time = 22511.704
+step = 905, loss = 0.1185919, r2_train = 0.016263929, r2_test = 0.017749528, train_time = 23.149, used_time = 22632.921
+step = 910, loss = 0.11899457, r2_train = 0.019057413, r2_test = 0.020816679, train_time = 23.108, used_time = 22753.895
+step = 915, loss = 0.11934617, r2_train = 0.020159881, r2_test = 0.021658159, train_time = 23.152, used_time = 22875.099
+step = 920, loss = 0.11647815, r2_train = 0.018536738, r2_test = 0.020335677, train_time = 23.046, used_time = 22995.656
+step = 925, loss = 0.11647273, r2_train = 0.024701578, r2_test = 0.025170762, train_time = 23.330, used_time = 23117.746
+step = 930, loss = 0.11857784, r2_train = 0.017147552, r2_test = 0.018827822, train_time = 23.270, used_time = 23239.537
+step = 935, loss = 0.12033931, r2_train = 0.018256316, r2_test = 0.01965967, train_time = 23.202, used_time = 23360.980
+step = 940, loss = 0.1172547, r2_train = 0.017817474, r2_test = 0.018901487, train_time = 23.345, used_time = 23483.079
+step = 945, loss = 0.11686326, r2_train = 0.018310572, r2_test = 0.019824262, train_time = 23.098, used_time = 23604.090
+step = 950, loss = 0.1160981, r2_train = 0.01832313, r2_test = 0.019560637, train_time = 23.236, used_time = 23725.526
+step = 955, loss = 0.11542025, r2_train = 0.016315792, r2_test = 0.017502824, train_time = 23.287, used_time = 23847.372
+step = 960, loss = 0.11872003, r2_train = 0.018487318, r2_test = 0.019904734, train_time = 23.552, used_time = 23970.503
+step = 965, loss = 0.11713445, r2_train = 0.01610991, r2_test = 0.017265442, train_time = 23.346, used_time = 24092.717
+step = 970, loss = 0.11611251, r2_train = 0.021400121, r2_test = 0.023364173, train_time = 23.399, used_time = 24215.044
+step = 975, loss = 0.11750665, r2_train = 0.02809086, r2_test = 0.029142174, train_time = 23.277, used_time = 24336.871
+step = 980, loss = 0.11629471, r2_train = 0.017366227, r2_test = 0.01872469, train_time = 23.349, used_time = 24459.066
+step = 985, loss = 0.11612926, r2_train = 0.017811743, r2_test = 0.019056717, train_time = 23.285, used_time = 24580.870
+step = 990, loss = 0.11712389, r2_train = 0.023756112, r2_test = 0.025139544, train_time = 23.271, used_time = 24702.574
+step = 995, loss = 0.1166127, r2_train = 0.018690568, r2_test = 0.0203257, train_time = 23.093, used_time = 24823.518
+step = 1000, loss = 0.11842334, r2_train = 0.020265838, r2_test = 0.021518294, train_time = 23.263, used_time = 24945.298
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 64047777
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 42813077
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 77180043
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 4525790
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 12181339
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 85355225
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 59927521
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 45091806
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 6182695
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 46866107
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 52916277
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 50517603
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 34453751
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 43171140
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 66299554
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 96807050
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 13529696
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 44494173
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 85203359
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 58985829
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 96265825
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 79334702
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 48216004
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 15085394
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 48950446
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 93372430
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 173748
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 92867137
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 32201090
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 2915865
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 73953424
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 57149232
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 512346
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 20088182
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 20529680
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 49041702
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 87902090
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 73853237
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 73058174
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 81594717
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 20737323
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 77788546
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 50678569
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 24658066
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 30892471
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 25286654
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 63190680
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 77358228
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 17291253
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 56318840
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 42804705
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 4044831
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 34889025
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 38708060
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 40811079
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 5215537
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 63675983
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 47427060
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 40267859
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 78336604
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 93683098
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 90598548
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 64286921
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 14508161
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 19756463
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 2156695
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 74321488
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 65870920
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 46173420
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 93933018
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 42281791
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 1833538
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 22695929
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 79501805
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 47295482
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 80829295
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 33520739
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 29392988
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 42512670
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 83187543
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 6732098
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 33802241
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 82005202
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 48699821
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 95976427
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 95768181
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 50717986
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 43109735
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 46177623
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 42113880
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 28337654
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 13689033
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 73267330
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 92918007
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 35168156
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 34745773
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 48522672
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 16745102
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 56969242
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 40296453
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 23706739
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 745668
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 3976151
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 54201345
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 11319764
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 6649905
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 50044318
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 24112749
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 68337395
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 38152252
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 90577733
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 73319727
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 47798595
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 30898915
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 33416887
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 8255219
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 7117089
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 31547718
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 33597843
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 84132771
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 62661100
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 15568316
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 18597304
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 97318902
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 23623527
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 22445679
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 44490297
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 87768008
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 23539088
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 660668
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 77919030
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 15645119
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 26232257
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=20, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=20, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103591
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 20)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-20_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 41206182
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
