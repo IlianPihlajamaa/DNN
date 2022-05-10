@@ -3,7 +3,7 @@
 This repository contains a trained deep neural network that can reproduce generalized mode coupling theory results with a high accuracy. 
 It was trained on a data set of machine generated structure factors and their full GMCT solutions for a randomly chosen order 1-5. The model was trained using PyTorch.
 
-The data on which it is trained can be found at this link: ....
+The data on which it is trained can be found at this link: https://tue.data.surfsara.nl/index.php/s/zlfkEkudOzNFbYt
 That repository also contains the code to solve the GMCT equations.
 
 To run the model, put the contents of the data in the folders "Data" and "Data 2" and run DN_pytorch.py.
