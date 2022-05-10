@@ -8,7 +8,7 @@ The data on which it is trained can be found at this link: https://tue.data.surf
 That repository also contains the code to solve the GMCT equations.
 
 
-To run the model, put the contents of the data in the folders "Data" and "Data 2" and run DN_pytorch.py.
+To run the model, put the contents of the data in the folders "Data" and "Data 2" and run DNN_pytorch.py.
 
 The model requires 68 input parameters. 
  - the first 64 are the discretised structure factors on the grid given by "k_array.txt" which resides in the Data folders. 
