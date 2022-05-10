@@ -1,0 +1,1097 @@
+batch_size = 300
+bias = True
+clear_checkpoint = True
+clip_grad = 0
+cuda = 0
+device = cuda:0
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 21)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-21_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 86336781
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+step = 0, loss = 2.0668111, r2_train = 0.18453456, r2_test = 0.1853583, train_time = 15.337, used_time = 15.493
+step = 5, loss = 1.2169639, r2_train = 0.15272573, r2_test = 0.15330758, train_time = 16.233, used_time = 96.872
+step = 10, loss = 1.0156914, r2_train = 0.14429523, r2_test = 0.14511111, train_time = 14.722, used_time = 170.631
+step = 15, loss = 0.92124275, r2_train = 0.15208726, r2_test = 0.15318485, train_time = 15.072, used_time = 246.172
+step = 20, loss = 0.84444476, r2_train = 0.12154379, r2_test = 0.12269957, train_time = 14.088, used_time = 316.770
+step = 25, loss = 0.80662628, r2_train = 0.13106044, r2_test = 0.13093242, train_time = 14.080, used_time = 387.356
+step = 30, loss = 0.77234711, r2_train = 0.107496, r2_test = 0.10887684, train_time = 14.549, used_time = 460.249
+step = 35, loss = 0.74490046, r2_train = 0.11309652, r2_test = 0.11361939, train_time = 14.338, used_time = 532.132
+step = 40, loss = 0.72981077, r2_train = 0.11796361, r2_test = 0.11865444, train_time = 14.111, used_time = 602.911
+step = 45, loss = 0.70030442, r2_train = 0.1114679, r2_test = 0.11238937, train_time = 14.062, used_time = 673.611
+step = 50, loss = 0.69101215, r2_train = 0.10226022, r2_test = 0.10280256, train_time = 14.059, used_time = 744.067
+step = 55, loss = 0.68257801, r2_train = 0.12094948, r2_test = 0.12197182, train_time = 14.052, used_time = 814.671
+step = 60, loss = 0.66091011, r2_train = 0.11747398, r2_test = 0.11772558, train_time = 14.058, used_time = 885.121
+step = 65, loss = 0.6522557, r2_train = 0.098901787, r2_test = 0.099622022, train_time = 14.052, used_time = 955.761
+step = 70, loss = 0.64722354, r2_train = 0.11243011, r2_test = 0.11330134, train_time = 14.078, used_time = 1026.309
+step = 75, loss = 0.62398531, r2_train = 0.11404118, r2_test = 0.11497838, train_time = 14.057, used_time = 1096.777
+step = 80, loss = 0.59290268, r2_train = 0.10733791, r2_test = 0.10829915, train_time = 14.060, used_time = 1167.340
+step = 85, loss = 0.58799217, r2_train = 0.10282942, r2_test = 0.10362411, train_time = 14.070, used_time = 1237.881
+step = 90, loss = 0.57345177, r2_train = 0.11873058, r2_test = 0.11933142, train_time = 14.071, used_time = 1308.387
+step = 95, loss = 0.57324272, r2_train = 0.09124499, r2_test = 0.091867508, train_time = 14.071, used_time = 1378.944
+step = 100, loss = 0.57087026, r2_train = 0.10348322, r2_test = 0.10491601, train_time = 14.185, used_time = 1450.024
+step = 105, loss = 0.54202557, r2_train = 0.092345656, r2_test = 0.092599451, train_time = 14.161, used_time = 1521.019
+step = 110, loss = 0.51876865, r2_train = 0.089356131, r2_test = 0.090517111, train_time = 14.660, used_time = 1594.471
+step = 115, loss = 0.5092665, r2_train = 0.097542412, r2_test = 0.097897137, train_time = 14.412, used_time = 1666.718
+step = 120, loss = 0.48997711, r2_train = 0.086331652, r2_test = 0.087344395, train_time = 14.750, used_time = 1740.624
+step = 125, loss = 0.49182575, r2_train = 0.11225528, r2_test = 0.11274581, train_time = 15.114, used_time = 1816.378
+step = 130, loss = 0.46631151, r2_train = 0.090683037, r2_test = 0.090771025, train_time = 14.905, used_time = 1891.058
+step = 135, loss = 0.4462835, r2_train = 0.081193465, r2_test = 0.082371031, train_time = 15.916, used_time = 1970.819
+step = 140, loss = 0.44029901, r2_train = 0.081721056, r2_test = 0.082727943, train_time = 18.127, used_time = 2061.615
+step = 145, loss = 0.41951169, r2_train = 0.074879812, r2_test = 0.075877966, train_time = 16.052, used_time = 2142.060
+step = 150, loss = 0.41136557, r2_train = 0.075588455, r2_test = 0.076679446, train_time = 14.850, used_time = 2216.462
+step = 155, loss = 0.39608106, r2_train = 0.073117917, r2_test = 0.074918454, train_time = 14.011, used_time = 2286.708
+step = 160, loss = 0.38498045, r2_train = 0.070228432, r2_test = 0.071643279, train_time = 14.822, used_time = 2360.973
+step = 165, loss = 0.37344299, r2_train = 0.069768536, r2_test = 0.071215434, train_time = 15.668, used_time = 2439.498
+step = 170, loss = 0.3723585, r2_train = 0.078255057, r2_test = 0.079698975, train_time = 14.157, used_time = 2510.437
+step = 175, loss = 0.36468516, r2_train = 0.059745091, r2_test = 0.061776907, train_time = 14.332, used_time = 2582.280
+step = 180, loss = 0.3466936, r2_train = 0.058613417, r2_test = 0.060849759, train_time = 15.937, used_time = 2662.122
+step = 185, loss = 0.34783888, r2_train = 0.059280477, r2_test = 0.060708925, train_time = 16.548, used_time = 2745.047
+step = 190, loss = 0.33938369, r2_train = 0.076563972, r2_test = 0.078917226, train_time = 17.352, used_time = 2831.958
+step = 195, loss = 0.33486121, r2_train = 0.059777496, r2_test = 0.061865418, train_time = 14.520, used_time = 2904.747
+step = 200, loss = 0.32505283, r2_train = 0.053803441, r2_test = 0.056099453, train_time = 15.799, used_time = 2983.902
+step = 205, loss = 0.32765727, r2_train = 0.06134622, r2_test = 0.063701347, train_time = 14.795, used_time = 3058.060
+step = 210, loss = 0.31569838, r2_train = 0.055025998, r2_test = 0.057324041, train_time = 14.406, used_time = 3130.246
+step = 215, loss = 0.30864018, r2_train = 0.053159426, r2_test = 0.055562987, train_time = 15.199, used_time = 3206.425
+step = 220, loss = 0.30901341, r2_train = 0.058958825, r2_test = 0.060970665, train_time = 15.256, used_time = 3282.866
+step = 225, loss = 0.29964754, r2_train = 0.054733667, r2_test = 0.056611027, train_time = 14.611, used_time = 3356.107
+step = 230, loss = 0.2981045, r2_train = 0.054367078, r2_test = 0.056143408, train_time = 14.119, used_time = 3426.857
+step = 235, loss = 0.29340245, r2_train = 0.048324187, r2_test = 0.050404771, train_time = 14.422, used_time = 3499.153
+step = 240, loss = 0.28666141, r2_train = 0.052122802, r2_test = 0.054014367, train_time = 14.805, used_time = 3573.339
+step = 245, loss = 0.28448673, r2_train = 0.045868895, r2_test = 0.047647691, train_time = 14.530, used_time = 3646.168
+step = 250, loss = 0.28219592, r2_train = 0.056137358, r2_test = 0.057146659, train_time = 15.326, used_time = 3722.959
+step = 255, loss = 0.27459334, r2_train = 0.062179231, r2_test = 0.063874588, train_time = 14.969, used_time = 3797.992
+step = 260, loss = 0.27408107, r2_train = 0.046848142, r2_test = 0.04835023, train_time = 15.367, used_time = 3874.989
+step = 265, loss = 0.27257752, r2_train = 0.061326581, r2_test = 0.063010628, train_time = 14.956, used_time = 3949.953
+step = 270, loss = 0.27110388, r2_train = 0.060849495, r2_test = 0.063108848, train_time = 15.033, used_time = 4025.278
+step = 275, loss = 0.26864739, r2_train = 0.057465921, r2_test = 0.059046623, train_time = 14.945, used_time = 4100.186
+step = 280, loss = 0.26127682, r2_train = 0.049674494, r2_test = 0.051200017, train_time = 15.868, used_time = 4179.686
+step = 285, loss = 0.26005974, r2_train = 0.047723606, r2_test = 0.049446681, train_time = 15.316, used_time = 4256.452
+step = 290, loss = 0.2566517, r2_train = 0.041638799, r2_test = 0.043022194, train_time = 15.160, used_time = 4332.413
+step = 295, loss = 0.25501306, r2_train = 0.049784815, r2_test = 0.051287692, train_time = 14.760, used_time = 4406.393
+step = 300, loss = 0.25932123, r2_train = 0.044092, r2_test = 0.045728945, train_time = 15.026, used_time = 4481.683
+step = 305, loss = 0.2592957, r2_train = 0.064465612, r2_test = 0.065508418, train_time = 15.539, used_time = 4559.566
+step = 310, loss = 0.25087211, r2_train = 0.039746063, r2_test = 0.041306881, train_time = 14.842, used_time = 4633.934
+step = 315, loss = 0.24606906, r2_train = 0.04132068, r2_test = 0.042864947, train_time = 15.184, used_time = 4710.035
+step = 320, loss = 0.25000227, r2_train = 0.052960445, r2_test = 0.054430006, train_time = 15.433, used_time = 4787.358
+step = 325, loss = 0.24256738, r2_train = 0.042319372, r2_test = 0.043578179, train_time = 15.468, used_time = 4864.886
+step = 330, loss = 0.24727606, r2_train = 0.040124754, r2_test = 0.041786102, train_time = 15.062, used_time = 4940.356
+step = 335, loss = 0.24018575, r2_train = 0.039812481, r2_test = 0.041312977, train_time = 15.530, used_time = 5018.187
+step = 340, loss = 0.24444497, r2_train = 0.045682544, r2_test = 0.046795518, train_time = 15.214, used_time = 5094.413
+step = 345, loss = 0.23990689, r2_train = 0.044004833, r2_test = 0.045265061, train_time = 14.985, used_time = 5169.526
+step = 350, loss = 0.23867623, r2_train = 0.038874138, r2_test = 0.040191858, train_time = 15.135, used_time = 5245.375
+step = 355, loss = 0.24164782, r2_train = 0.044305027, r2_test = 0.045479079, train_time = 15.335, used_time = 5322.240
+step = 360, loss = 0.23866324, r2_train = 0.043210718, r2_test = 0.044451476, train_time = 15.421, used_time = 5399.502
+step = 365, loss = 0.23994692, r2_train = 0.043883827, r2_test = 0.045455482, train_time = 14.974, used_time = 5474.558
+step = 370, loss = 0.23543442, r2_train = 0.039041135, r2_test = 0.040700413, train_time = 15.525, used_time = 5552.342
+step = 375, loss = 0.23936407, r2_train = 0.035887475, r2_test = 0.037856893, train_time = 14.961, used_time = 5627.438
+step = 380, loss = 0.2366215, r2_train = 0.042143181, r2_test = 0.042580934, train_time = 15.422, used_time = 5704.703
+step = 385, loss = 0.23717532, r2_train = 0.036961643, r2_test = 0.038201452, train_time = 15.467, used_time = 5782.223
+step = 390, loss = 0.23151218, r2_train = 0.047444044, r2_test = 0.048409384, train_time = 15.198, used_time = 5858.371
+step = 395, loss = 0.23129706, r2_train = 0.039361625, r2_test = 0.040428678, train_time = 15.063, used_time = 5933.876
+step = 400, loss = 0.22809152, r2_train = 0.042609416, r2_test = 0.043462049, train_time = 14.810, used_time = 6008.082
+step = 405, loss = 0.22734703, r2_train = 0.040691018, r2_test = 0.041470426, train_time = 14.701, used_time = 6081.775
+step = 410, loss = 0.22820709, r2_train = 0.044363661, r2_test = 0.045372655, train_time = 15.230, used_time = 6158.079
+step = 415, loss = 0.22470025, r2_train = 0.03680378, r2_test = 0.037528347, train_time = 14.752, used_time = 6232.027
+step = 420, loss = 0.23067699, r2_train = 0.035124279, r2_test = 0.03583061, train_time = 15.434, used_time = 6309.355
+step = 425, loss = 0.22512906, r2_train = 0.04062393, r2_test = 0.041493859, train_time = 14.976, used_time = 6384.424
+step = 430, loss = 0.22524715, r2_train = 0.045023699, r2_test = 0.046473909, train_time = 15.028, used_time = 6459.714
+step = 435, loss = 0.22555594, r2_train = 0.03701184, r2_test = 0.038485477, train_time = 14.965, used_time = 6534.723
+step = 440, loss = 0.21826543, r2_train = 0.03506124, r2_test = 0.036216269, train_time = 15.382, used_time = 6611.783
+step = 445, loss = 0.22070561, r2_train = 0.039178811, r2_test = 0.040428273, train_time = 15.169, used_time = 6687.812
+step = 450, loss = 0.22344462, r2_train = 0.039971847, r2_test = 0.041201585, train_time = 15.206, used_time = 6763.999
+step = 455, loss = 0.22308536, r2_train = 0.037428768, r2_test = 0.038654671, train_time = 15.181, used_time = 6840.082
+step = 460, loss = 0.21943767, r2_train = 0.040171725, r2_test = 0.041834536, train_time = 14.935, used_time = 6914.909
+step = 465, loss = 0.21944877, r2_train = 0.037238754, r2_test = 0.038550274, train_time = 14.676, used_time = 6988.477
+step = 470, loss = 0.2189812, r2_train = 0.042839629, r2_test = 0.043550647, train_time = 15.756, used_time = 7067.418
+step = 475, loss = 0.21746653, r2_train = 0.054153246, r2_test = 0.055406025, train_time = 15.195, used_time = 7143.583
+step = 480, loss = 0.22194462, r2_train = 0.044514849, r2_test = 0.045632556, train_time = 15.655, used_time = 7222.015
+step = 485, loss = 0.21335045, r2_train = 0.036310164, r2_test = 0.0378961, train_time = 15.462, used_time = 7299.511
+step = 490, loss = 0.21633725, r2_train = 0.041602408, r2_test = 0.042801733, train_time = 14.517, used_time = 7372.252
+step = 495, loss = 0.21526923, r2_train = 0.039322011, r2_test = 0.040804322, train_time = 15.205, used_time = 7448.467
+step = 500, loss = 0.21737542, r2_train = 0.038651227, r2_test = 0.040656717, train_time = 15.496, used_time = 7526.106
+step = 505, loss = 0.2127619, r2_train = 0.036037791, r2_test = 0.037232816, train_time = 15.633, used_time = 7604.458
+step = 510, loss = 0.21407158, r2_train = 0.03435184, r2_test = 0.03581347, train_time = 15.363, used_time = 7681.428
+step = 515, loss = 0.21818991, r2_train = 0.037330806, r2_test = 0.038620105, train_time = 15.426, used_time = 7758.749
+step = 520, loss = 0.21099055, r2_train = 0.038322427, r2_test = 0.040017784, train_time = 15.075, used_time = 7834.281
+step = 525, loss = 0.2138843, r2_train = 0.033363839, r2_test = 0.034526393, train_time = 14.882, used_time = 7908.879
+step = 530, loss = 0.21042044, r2_train = 0.03600839, r2_test = 0.037522359, train_time = 14.974, used_time = 7983.907
+step = 535, loss = 0.21305186, r2_train = 0.035922831, r2_test = 0.03788657, train_time = 15.343, used_time = 8060.809
+step = 540, loss = 0.20508325, r2_train = 0.037399563, r2_test = 0.038630621, train_time = 15.179, used_time = 8136.859
+step = 545, loss = 0.21228126, r2_train = 0.032553045, r2_test = 0.033373658, train_time = 15.130, used_time = 8212.693
+step = 550, loss = 0.21535066, r2_train = 0.034591964, r2_test = 0.035584293, train_time = 15.173, used_time = 8288.717
+step = 555, loss = 0.20748906, r2_train = 0.034896038, r2_test = 0.036718544, train_time = 15.016, used_time = 8363.981
+step = 560, loss = 0.20265179, r2_train = 0.044568555, r2_test = 0.045525927, train_time = 15.052, used_time = 8439.399
+step = 565, loss = 0.20669069, r2_train = 0.037173211, r2_test = 0.038382644, train_time = 14.993, used_time = 8514.547
+step = 570, loss = 0.21540172, r2_train = 0.035409599, r2_test = 0.036593539, train_time = 15.076, used_time = 8590.080
+step = 575, loss = 0.2081794, r2_train = 0.031766287, r2_test = 0.032461275, train_time = 15.066, used_time = 8665.594
+step = 580, loss = 0.20539134, r2_train = 0.037397276, r2_test = 0.038701596, train_time = 15.601, used_time = 8743.757
+step = 585, loss = 0.20588982, r2_train = 0.035223347, r2_test = 0.036327055, train_time = 14.718, used_time = 8817.530
+step = 590, loss = 0.20337035, r2_train = 0.03084398, r2_test = 0.032235429, train_time = 15.506, used_time = 8895.215
+step = 595, loss = 0.20460325, r2_train = 0.03590889, r2_test = 0.036935605, train_time = 15.652, used_time = 8973.663
+step = 600, loss = 0.20118999, r2_train = 0.041446154, r2_test = 0.042389354, train_time = 15.179, used_time = 9049.718
+step = 605, loss = 0.20075026, r2_train = 0.031175864, r2_test = 0.032667007, train_time = 15.842, used_time = 9129.119
+step = 610, loss = 0.20308369, r2_train = 0.029739641, r2_test = 0.031210058, train_time = 15.432, used_time = 9206.432
+step = 615, loss = 0.2038514, r2_train = 0.031141403, r2_test = 0.03265274, train_time = 14.868, used_time = 9280.952
+step = 620, loss = 0.20130952, r2_train = 0.046916578, r2_test = 0.048415245, train_time = 14.785, used_time = 9355.037
+step = 625, loss = 0.20850376, r2_train = 0.036748425, r2_test = 0.037776976, train_time = 15.193, used_time = 9431.186
+step = 630, loss = 0.20496656, r2_train = 0.041023353, r2_test = 0.042934665, train_time = 15.442, used_time = 9508.551
+step = 635, loss = 0.20072935, r2_train = 0.034103496, r2_test = 0.035510285, train_time = 15.454, used_time = 9586.012
+step = 640, loss = 0.20130579, r2_train = 0.034465034, r2_test = 0.035491542, train_time = 15.160, used_time = 9661.967
+step = 645, loss = 0.19669389, r2_train = 0.045610841, r2_test = 0.047000058, train_time = 15.110, used_time = 9737.699
+step = 650, loss = 0.20448153, r2_train = 0.033925587, r2_test = 0.035316595, train_time = 14.948, used_time = 9812.598
+step = 655, loss = 0.20196763, r2_train = 0.043448959, r2_test = 0.044690441, train_time = 14.780, used_time = 9886.688
+step = 660, loss = 0.20431204, r2_train = 0.037791544, r2_test = 0.039006771, train_time = 15.419, used_time = 9963.938
+step = 665, loss = 0.20187997, r2_train = 0.040605661, r2_test = 0.041443133, train_time = 14.793, used_time = 10038.090
+step = 670, loss = 0.1999596, r2_train = 0.035126501, r2_test = 0.036224313, train_time = 15.244, used_time = 10114.472
+step = 675, loss = 0.2027266, r2_train = 0.030650426, r2_test = 0.032266413, train_time = 15.628, used_time = 10192.803
+step = 680, loss = 0.2003661, r2_train = 0.03449982, r2_test = 0.036317467, train_time = 15.265, used_time = 10269.281
+step = 685, loss = 0.20096896, r2_train = 0.034163357, r2_test = 0.036367083, train_time = 15.006, used_time = 10344.493
+step = 690, loss = 0.19740282, r2_train = 0.030020634, r2_test = 0.031784766, train_time = 15.413, used_time = 10421.709
+step = 695, loss = 0.19641006, r2_train = 0.030326702, r2_test = 0.032411675, train_time = 14.912, used_time = 10496.458
+step = 700, loss = 0.20026637, r2_train = 0.03032005, r2_test = 0.031373711, train_time = 15.646, used_time = 10574.847
+step = 705, loss = 0.19685936, r2_train = 0.042174309, r2_test = 0.043521471, train_time = 15.063, used_time = 10650.352
+step = 710, loss = 0.19242993, r2_train = 0.029104002, r2_test = 0.03008424, train_time = 15.305, used_time = 10727.031
+step = 715, loss = 0.19784897, r2_train = 0.03237782, r2_test = 0.034377049, train_time = 15.375, used_time = 10804.086
+step = 720, loss = 0.1985746, r2_train = 0.031214709, r2_test = 0.032409423, train_time = 15.238, used_time = 10880.431
+step = 725, loss = 0.19704817, r2_train = 0.032916191, r2_test = 0.034836456, train_time = 14.688, used_time = 10954.060
+step = 730, loss = 0.1947495, r2_train = 0.029072355, r2_test = 0.030965497, train_time = 15.520, used_time = 11031.815
+step = 735, loss = 0.19633756, r2_train = 0.029126998, r2_test = 0.03085534, train_time = 15.266, used_time = 11108.335
+step = 740, loss = 0.19897072, r2_train = 0.033657373, r2_test = 0.034773572, train_time = 15.270, used_time = 11184.842
+step = 745, loss = 0.19941109, r2_train = 0.028807176, r2_test = 0.029966683, train_time = 15.269, used_time = 11261.376
+step = 750, loss = 0.19731094, r2_train = 0.028286772, r2_test = 0.029866541, train_time = 15.084, used_time = 11336.952
+step = 755, loss = 0.19766367, r2_train = 0.030468089, r2_test = 0.032374051, train_time = 14.976, used_time = 11412.016
+step = 760, loss = 0.19807105, r2_train = 0.029845714, r2_test = 0.031355086, train_time = 15.241, used_time = 11488.378
+step = 765, loss = 0.19546091, r2_train = 0.029609129, r2_test = 0.030943685, train_time = 16.004, used_time = 11568.582
+step = 770, loss = 0.19161096, r2_train = 0.040218999, r2_test = 0.041634935, train_time = 15.114, used_time = 11644.306
+step = 775, loss = 0.19709996, r2_train = 0.041266892, r2_test = 0.042781205, train_time = 15.054, used_time = 11719.766
+step = 780, loss = 0.19463952, r2_train = 0.026355457, r2_test = 0.028296777, train_time = 15.328, used_time = 11796.562
+step = 785, loss = 0.19657991, r2_train = 0.029743555, r2_test = 0.031202662, train_time = 15.097, used_time = 11872.234
+step = 790, loss = 0.19151952, r2_train = 0.034668823, r2_test = 0.03609243, train_time = 15.430, used_time = 11949.546
+step = 795, loss = 0.19581069, r2_train = 0.026296794, r2_test = 0.028032183, train_time = 15.537, used_time = 12027.421
+step = 800, loss = 0.19239572, r2_train = 0.026350712, r2_test = 0.027774957, train_time = 15.152, used_time = 12103.342
+step = 805, loss = 0.1944367, r2_train = 0.045079071, r2_test = 0.045909249, train_time = 14.635, used_time = 12176.704
+step = 810, loss = 0.19159328, r2_train = 0.033360614, r2_test = 0.035303968, train_time = 15.776, used_time = 12255.744
+step = 815, loss = 0.19140776, r2_train = 0.040308337, r2_test = 0.0416623, train_time = 15.167, used_time = 12331.765
+step = 820, loss = 0.19643837, r2_train = 0.034797873, r2_test = 0.035827242, train_time = 15.383, used_time = 12408.839
+step = 825, loss = 0.19546776, r2_train = 0.028379629, r2_test = 0.030148481, train_time = 15.500, used_time = 12486.528
+step = 830, loss = 0.1923363, r2_train = 0.042634918, r2_test = 0.043550364, train_time = 15.715, used_time = 12565.262
+step = 835, loss = 0.19259087, r2_train = 0.028162281, r2_test = 0.030110535, train_time = 15.434, used_time = 12642.622
+step = 840, loss = 0.19066095, r2_train = 0.042356132, r2_test = 0.04337491, train_time = 15.004, used_time = 12717.804
+step = 845, loss = 0.18774182, r2_train = 0.026514127, r2_test = 0.027959522, train_time = 15.612, used_time = 12796.050
+step = 850, loss = 0.19526653, r2_train = 0.02847177, r2_test = 0.029824043, train_time = 14.790, used_time = 12870.157
+step = 855, loss = 0.19166674, r2_train = 0.054691751, r2_test = 0.055723713, train_time = 15.186, used_time = 12946.275
+step = 860, loss = 0.19033333, r2_train = 0.030919746, r2_test = 0.032648605, train_time = 15.197, used_time = 13022.421
+step = 865, loss = 0.19181668, r2_train = 0.029609484, r2_test = 0.031326005, train_time = 15.339, used_time = 13099.303
+step = 870, loss = 0.19041973, r2_train = 0.027603214, r2_test = 0.028887516, train_time = 15.748, used_time = 13178.200
+step = 875, loss = 0.19068192, r2_train = 0.033402793, r2_test = 0.034291891, train_time = 14.654, used_time = 13251.653
+step = 880, loss = 0.18525183, r2_train = 0.028754092, r2_test = 0.030347739, train_time = 15.400, used_time = 13328.811
+step = 885, loss = 0.19146076, r2_train = 0.032039597, r2_test = 0.033428874, train_time = 14.779, used_time = 13402.888
+step = 890, loss = 0.19166415, r2_train = 0.028999091, r2_test = 0.031006439, train_time = 15.498, used_time = 13480.534
+step = 895, loss = 0.18696057, r2_train = 0.03525101, r2_test = 0.036691679, train_time = 15.319, used_time = 13557.314
+step = 900, loss = 0.18611034, r2_train = 0.030910341, r2_test = 0.032575009, train_time = 14.969, used_time = 13632.314
+step = 905, loss = 0.19245383, r2_train = 0.027652543, r2_test = 0.029121784, train_time = 15.221, used_time = 13708.606
+step = 910, loss = 0.18814911, r2_train = 0.033003434, r2_test = 0.034724747, train_time = 14.687, used_time = 13782.199
+step = 915, loss = 0.18778977, r2_train = 0.045524261, r2_test = 0.045746427, train_time = 14.757, used_time = 13856.173
+step = 920, loss = 0.19172044, r2_train = 0.033989031, r2_test = 0.035064159, train_time = 14.991, used_time = 13931.285
+step = 925, loss = 0.18543652, r2_train = 0.028521737, r2_test = 0.03035296, train_time = 15.686, used_time = 14009.903
+step = 930, loss = 0.1840249, r2_train = 0.030500007, r2_test = 0.03200327, train_time = 15.132, used_time = 14085.719
+step = 935, loss = 0.1891503, r2_train = 0.025505774, r2_test = 0.027509228, train_time = 15.156, used_time = 14161.687
+step = 940, loss = 0.19222158, r2_train = 0.028755256, r2_test = 0.03031122, train_time = 15.759, used_time = 14240.635
+step = 945, loss = 0.19143623, r2_train = 0.032521967, r2_test = 0.034155794, train_time = 15.604, used_time = 14318.841
+step = 950, loss = 0.18682498, r2_train = 0.030893272, r2_test = 0.032455579, train_time = 15.549, used_time = 14396.739
+step = 955, loss = 0.18840217, r2_train = 0.027109591, r2_test = 0.029222176, train_time = 15.579, used_time = 14474.814
+step = 960, loss = 0.18722695, r2_train = 0.037997561, r2_test = 0.03892515, train_time = 15.198, used_time = 14550.967
+step = 965, loss = 0.18478881, r2_train = 0.027234009, r2_test = 0.029375983, train_time = 15.283, used_time = 14627.572
+step = 970, loss = 0.18698246, r2_train = 0.032868327, r2_test = 0.034578346, train_time = 15.537, used_time = 14705.411
+step = 975, loss = 0.18695201, r2_train = 0.02637868, r2_test = 0.028175492, train_time = 14.984, used_time = 14780.521
+step = 980, loss = 0.1857428, r2_train = 0.026202446, r2_test = 0.02800984, train_time = 15.300, used_time = 14857.180
+step = 985, loss = 0.18709239, r2_train = 0.029539976, r2_test = 0.031113712, train_time = 15.323, used_time = 14933.979
+step = 990, loss = 0.18670126, r2_train = 0.034240441, r2_test = 0.035676823, train_time = 15.274, used_time = 15010.505
+step = 995, loss = 0.18433627, r2_train = 0.027868172, r2_test = 0.029494146, train_time = 15.017, used_time = 15085.769
+step = 1000, loss = 0.18764941, r2_train = 0.026463401, r2_test = 0.028026075, train_time = 15.172, used_time = 15161.783
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 21)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-21_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 36629077
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 21)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-21_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 49742676
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 21)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-21_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 82536630
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 21)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-21_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 94658566
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 1000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 1000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 21)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-21_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 54769452
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 2000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 21)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-21_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 44746764
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+batch_size = 300
+bias = True
+clear_checkpoint = False
+clip_grad = 0
+cuda = -1
+device = cpu
+dtype = float64
+lr = 0.0005
+max_step = 2000
+n_in = 68
+n_out = 1
+net_depth = 9
+net_width = (100, 200, 200, 100, 100, 50, 21)
+no_stdout = False
+optimizer = adam
+out_dir = out
+out_filename = out/MLP_nd9_nw-100-200-200-100-100-50-21_bias/out
+out_infix = 
+print_step = 5
+save_step = 10
+seed = 2375902
+tolerance = 1e-05
+
+init_time = 0.000
+Training...
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
+MLP(
+  (net): Sequential(
+    (0): Linear(in_features=68, out_features=100, bias=True)
+    (1): GELU()
+    (2): Linear(in_features=100, out_features=200, bias=True)
+    (3): GELU()
+    (4): Linear(in_features=200, out_features=200, bias=True)
+    (5): GELU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): GELU()
+    (8): Linear(in_features=100, out_features=100, bias=True)
+    (9): GELU()
+    (10): Linear(in_features=100, out_features=50, bias=True)
+    (11): GELU()
+    (12): Linear(in_features=50, out_features=21, bias=True)
+    (13): GELU()
+    (14): Linear(in_features=21, out_features=1, bias=True)
+  )
+)
+
+Total number of trainable parameters: 103643
+
+Checkpoint found: 2000
+
