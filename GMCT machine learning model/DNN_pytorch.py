@@ -338,7 +338,6 @@ training_samples = utils_data.TensorDataset(X_train_scaled, y_train_scaled)
 data_loader_trn = utils_data.DataLoader(training_samples, batch_size=args.batch_size, drop_last=False, shuffle=True)
 # train_model(net, optimizer, args, params, last_step)
 load_model(net, optimizer, args, params)
-# find_phase_diagram(net, path)
 plot_data(net, path)
 
 
